@@ -1,0 +1,486 @@
+<?xml version="1.0" ?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="node_type" for="node" attr.name="type" attr.type="string"/>
+  <key id="node_label" for="node" attr.name="label" attr.type="string"/>
+  <key id="node_color" for="node" attr.name="color" attr.type="string"/>
+  <key id="edge_sign" for="edge" attr.name="sign" attr.type="string"/>
+  <key id="edge_color" for="edge" attr.name="color" attr.type="string"/>
+  <key id="edge_confidence" for="edge" attr.name="confidence" attr.type="string"/>
+  <key id="edge_mechanism" for="edge" attr.name="mechanism" attr.type="string"/>
+  <key id="edge_doi" for="edge" attr.name="doi" attr.type="string"/>
+  <key id="edge_evidence" for="edge" attr.name="evidence_sentence" attr.type="string"/>
+  <key id="graph_version" for="graph" attr.name="flash_p_version" attr.type="string"/>
+  <graph id="G" edgedefault="directed">
+    <data key="graph_version">1.1.0-4-g1b5bb08</data>
+    <node id="D27">
+      <data key="node_type">GENE</data>
+      <data key="node_label">D27</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="MAX3">
+      <data key="node_type">GENE</data>
+      <data key="node_label">MAX3</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="MAX4">
+      <data key="node_type">GENE</data>
+      <data key="node_label">MAX4</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="MAX1">
+      <data key="node_type">GENE</data>
+      <data key="node_label">MAX1</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="CLAMT">
+      <data key="node_type">GENE</data>
+      <data key="node_label">CLAMT</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="LBO">
+      <data key="node_type">GENE</data>
+      <data key="node_label">LBO</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="CXE">
+      <data key="node_type">GENE</data>
+      <data key="node_label">CXE</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="Strigolactone">
+      <data key="node_type">HORMONE</data>
+      <data key="node_label">Strigolactone</data>
+      <data key="node_color">#90EE90</data>
+    </node>
+    <node id="D14">
+      <data key="node_type">GENE</data>
+      <data key="node_label">D14</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="MAX2">
+      <data key="node_type">GENE</data>
+      <data key="node_label">MAX2</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="SMXL678">
+      <data key="node_type">PROTEIN_COMPLEX</data>
+      <data key="node_label">SMXL678</data>
+      <data key="node_color">#DDA0DD</data>
+    </node>
+    <node id="SPL9_15">
+      <data key="node_type">GENE</data>
+      <data key="node_label">SPL9_15</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="PHYB">
+      <data key="node_type">GENE</data>
+      <data key="node_label">PHYB</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="PIFS">
+      <data key="node_type">GENE</data>
+      <data key="node_label">PIFS</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="FHY3FAR1">
+      <data key="node_type">GENE</data>
+      <data key="node_label">FHY3FAR1</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="BRC1">
+      <data key="node_type">GENE</data>
+      <data key="node_label">BRC1</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="GT1">
+      <data key="node_type">GENE</data>
+      <data key="node_label">GT1</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="NCED3">
+      <data key="node_type">GENE</data>
+      <data key="node_label">NCED3</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="ABA">
+      <data key="node_type">HORMONE</data>
+      <data key="node_label">ABA</data>
+      <data key="node_color">#90EE90</data>
+    </node>
+    <node id="PIN1">
+      <data key="node_type">GENE</data>
+      <data key="node_label">PIN1</data>
+      <data key="node_color">#6495ED</data>
+    </node>
+    <node id="Auxin_Shoot">
+      <data key="node_type">HORMONE</data>
+      <data key="node_label">Auxin_Shoot</data>
+      <data key="node_color">#90EE90</data>
+    </node>
+    <node id="Auxin_Bud">
+      <data key="node_type">HORMONE</data>
+      <data key="node_label">Auxin_Bud</data>
+      <data key="node_color">#90EE90</data>
+    </node>
+    <node id="Cytokinin">
+      <data key="node_type">HORMONE</data>
+      <data key="node_label">Cytokinin</data>
+      <data key="node_color">#90EE90</data>
+    </node>
+    <node id="Gibberellin">
+      <data key="node_type">HORMONE</data>
+      <data key="node_label">Gibberellin</data>
+      <data key="node_color">#90EE90</data>
+    </node>
+    <node id="Sucrose">
+      <data key="node_type">METABOLITE</data>
+      <data key="node_label">Sucrose</data>
+      <data key="node_color">#FFD700</data>
+    </node>
+    <node id="Decapitation_Signal">
+      <data key="node_type">ENVIRONMENT</data>
+      <data key="node_label">Decapitation_Signal</data>
+      <data key="node_color">#87CEEB</data>
+    </node>
+    <node id="High_R_FR">
+      <data key="node_type">ENVIRONMENT</data>
+      <data key="node_label">High_R_FR</data>
+      <data key="node_color">#87CEEB</data>
+    </node>
+    <node id="Low_R_FR">
+      <data key="node_type">ENVIRONMENT</data>
+      <data key="node_label">Low_R_FR</data>
+      <data key="node_color">#87CEEB</data>
+    </node>
+    <node id="Bud_Release">
+      <data key="node_type">PROCESS</data>
+      <data key="node_label">Bud_Release</data>
+      <data key="node_color">#F0E68C</data>
+    </node>
+    <node id="Tiller_Number">
+      <data key="node_type">PHENOTYPE</data>
+      <data key="node_label">Tiller_Number</data>
+      <data key="node_color">#FF6347</data>
+    </node>
+    <edge id="e0" source="D27" target="MAX3">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.3390/plants11192604</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e1" source="MAX3" target="MAX4">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.3389/fpls.2022.1081740</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e2" source="MAX4" target="Strigolactone">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.3389/fpls.2024.1456627</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e3" source="MAX4" target="MAX1">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1111/nph.17737</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e4" source="MAX1" target="CLAMT">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1093/pcp/pcad088</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e5" source="CLAMT" target="LBO">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1093/pcp/pcad060</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e6" source="LBO" target="Strigolactone">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1093/pcp/pcad060</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e7" source="CXE" target="Strigolactone">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1093/plcell/koaf241</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e8" source="Strigolactone" target="D14">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1002/ps.5456</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e9" source="D14" target="MAX2">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1038/nature12878</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e10" source="D14" target="SMXL678">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1371/journal.pbio.3003395</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e11" source="MAX2" target="SMXL678">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1371/journal.pbio.3003395</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e12" source="SMXL678" target="BRC1">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1371/journal.pbio.3003395</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e13" source="SMXL678" target="SPL9_15">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1038/cr.2017.102</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e14" source="SPL9_15" target="BRC1">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1093/hr/uhaf250</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e15" source="High_R_FR" target="PHYB">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1111/j.1365-3040.2009.02050.x</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e16" source="Low_R_FR" target="PHYB">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1104/pp.105.074856</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e17" source="PHYB" target="BRC1">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1111/nph.19485</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e18" source="High_R_FR" target="PIFS">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1111/nph.17872</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e19" source="PIFS" target="BRC1">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1093/jxb/erw479</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e20" source="High_R_FR" target="FHY3FAR1">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1038/s41467-020-15893-7</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e21" source="Low_R_FR" target="FHY3FAR1">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1038/s41467-020-15893-7</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e22" source="FHY3FAR1" target="SMXL678">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1038/s41467-020-15893-7</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e23" source="FHY3FAR1" target="SPL9_15">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1038/s41467-020-15893-7</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e24" source="Decapitation_Signal" target="Auxin_Shoot">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1111/pce.12500</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e25" source="Decapitation_Signal" target="Sucrose">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1111/pce.12500</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e26" source="Auxin_Shoot" target="Auxin_Bud">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1093/jxb/erag062</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e27" source="PIN1" target="Auxin_Bud">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1038/srep35955</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e28" source="Cytokinin" target="Auxin_Bud">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.3389/fpls.2022.837136</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e29" source="Auxin_Bud" target="Tiller_Number">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.3390/plants15101445</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e30" source="Cytokinin" target="BRC1">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.3390/plants15121795</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e31" source="Sucrose" target="BRC1">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.3390/plants15121795</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e32" source="Sucrose" target="Bud_Release">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.3390/plants15091379</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e33" source="BRC1" target="Bud_Release">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.3390/plants14030486</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e34" source="BRC1" target="GT1">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.3389/fpls.2022.1048656</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e35" source="GT1" target="Bud_Release">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1104/pp.19.00717</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e36" source="NCED3" target="ABA">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.3390/plants14050813</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e37" source="ABA" target="Bud_Release">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1111/pce.70668</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e38" source="Bud_Release" target="Tiller_Number">
+      <data key="edge_sign">positive</data>
+      <data key="edge_color">#228B22</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.3389/fpls.2025.1532180</data>
+      <data key="edge_evidence"/>
+    </edge>
+    <edge id="e39" source="Gibberellin" target="Tiller_Number">
+      <data key="edge_sign">negative</data>
+      <data key="edge_color">#DC143C</data>
+      <data key="edge_confidence">MEDIUM</data>
+      <data key="edge_mechanism"/>
+      <data key="edge_doi">10.1038/s41467-019-10667-2</data>
+      <data key="edge_evidence"/>
+    </edge>
+  </graph>
+</graphml>

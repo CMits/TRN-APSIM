@@ -1,0 +1,5 @@
+method,accuracy,kappa,kappa_ci_lower,kappa_ci_upper,kappa_band,mcc,rigor_score,rigor_band,dars,dars_band,n_nodes,n_edges,n_tests,t_effective,mean_path_length,easy_n,easy_acc,easy_kappa,medium_n,medium_acc,medium_kappa,hard_n,hard_acc,hard_kappa,convergence_rate,parameters
+Algebraic,100.0,1.0,1.0,1.0,almost perfect,1.0,11.0362,large-scale strong,11.0362,large-scale strong,30,40,30,30,3.93,30,100.0,1.0,0,,,0,,,100.0,None (no parameter tuning required)
+ODE,100.0,1.0,1.0,1.0,almost perfect,1.0,11.0362,large-scale strong,11.0362,large-scale strong,30,40,30,30,3.93,30,100.0,1.0,0,,,0,,,100.0,"K=0.5, n=2 (from 24-combination sensitivity sweep)"
+RWR,100.0,1.0,1.0,1.0,almost perfect,1.0,11.0362,large-scale strong,11.0362,large-scale strong,30,40,30,30,3.93,30,100.0,1.0,0,,,0,,,100.0,alpha=0.5 (from 9-point sensitivity sweep)
+BEST,100.0,1.0,1.0,1.0,almost perfect,1.0,11.0362,large-scale strong,11.0362,large-scale strong,30,40,30,30,3.93,30,100.0,1.0,0,,,0,,,,best method: Algebraic

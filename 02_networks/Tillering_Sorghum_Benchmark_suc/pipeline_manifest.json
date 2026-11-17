@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "flash_p_version": "1.1.0-4-g1b5bb08",
+    "build_variant": "",
+    "phenotype": "Tillering",
+    "species": "Sorghum bicolor",
+    "created": "2026-08-12"
+  },
+  "manifest_schema_version": "1",
+  "network_directory": "networks\\Tillering_Sorghum_Benchmark",
+  "steps": [
+    {
+      "step": 6,
+      "step_name": "Export",
+      "started": "2026-08-12T02:18:05.413360+00:00",
+      "completed": "2026-08-12T02:18:05.413360+00:00",
+      "model": "claude-haiku-4-5-20251001",
+      "model_version": "",
+      "flash_p_version": "1.1.0-4-g1b5bb08",
+      "inputs": [
+        {
+          "path": "network/network.json",
+          "checksum_sha256": "4797fd526ba0aa1d06fc6160d7d2e144a8a6cd85b7f7f35a164950e660d1f324",
+          "size_bytes": 14232,
+          "created": "2026-08-12T02:10:31.315938+00:00"
+        },
+        {
+          "path": "network/algebraic_equations.json",
+          "checksum_sha256": "816f4a7443c6683afbcc0b642134c95f0d2794264792b6d2ebc18b4f1b896000",
+          "size_bytes": 7526,
+          "created": "2026-08-12T02:09:34.306347+00:00"
+        },
+        {
+          "path": "validation/script_validation_results.json",
+          "checksum_sha256": "161eb25845499f2858974bddaaa0850893aafefad30098fc9289655b47b4f5a1",
+          "size_bytes": 29811,
+          "created": "2026-08-12T02:14:58.095936+00:00"
+        },
+        {
+          "path": "validation/ode_validation_results.json",
+          "checksum_sha256": "1b3d743970fc2a3373029fe27fec5075d67fca38cc4c47db8aa60d3d5ffd0614",
+          "size_bytes": 29886,
+          "created": "2026-08-12T02:15:05.120514+00:00"
+        },
+        {
+          "path": "validation/rwr_validation_results.json",
+          "checksum_sha256": "8a44675d5ff61b8f7cc6a5e733ba45877670935c085d7f2f71837d8f2fb1fb20",
+          "size_bytes": 29679,
+          "created": "2026-08-12T02:15:10.939397+00:00"
+        },
+        {
+          "path": "validation/method_comparison.json",
+          "checksum_sha256": "f3eb979ed14b97646b22cf42f6236d04d647683af971020e4fc5feb600199b5c",
+          "size_bytes": 1703,
+          "created": "2026-08-12T02:16:24.839401+00:00"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "supplementary/Table_S1_edges.csv",
+          "checksum_sha256": "3d712d339d3bbdcc338be24526d73856317ea6219e763e27b711c325607a502d",
+          "size_bytes": 2407,
+          "created": "2026-08-12T02:17:37.250150+00:00"
+        },
+        {
+          "path": "supplementary/Table_S2_perturbations.csv",
+          "checksum_sha256": "8bf850d60653cd94a5735f5dd864b3050abb068ce350f640498a884792f8631c",
+          "size_bytes": 2255,
+          "created": "2026-08-12T02:17:37.251146+00:00"
+        },
+        {
+          "path": "supplementary/Table_S3_reconciled_perturbations.csv",
+          "checksum_sha256": "924afeedec50acf5ac5b553a31aebe61f298a9720d929feab405847e053e8e3f",
+          "size_bytes": 879,
+          "created": "2026-08-12T02:17:37.253528+00:00"
+        },
+        {
+          "path": "supplementary/Table_S4_algebraic_equations.csv",
+          "checksum_sha256": "3b879e1c6deba4fb1ac0fcac3552b8c76c812ebe396a62d7fb38a557bb86cca2",
+          "size_bytes": 226,
+          "created": "2026-08-12T02:17:37.254531+00:00"
+        },
+        {
+          "path": "supplementary/Table_S5_ode_equations.csv",
+          "checksum_sha256": "b4eb9a77c37d4ff4d203d2c1a525bd4f33aec6af143e8925e16c3821385decac",
+          "size_bytes": 2619,
+          "created": "2026-08-12T02:17:37.255532+00:00"
+        },
+        {
+          "path": "supplementary/Table_S7a_algebraic_results.csv",
+          "checksum_sha256": "4fe769a1c280a6f3189b6388d61f37b200d0458ec89007d4b42db0b014d551a6",
+          "size_bytes": 4307,
+          "created": "2026-08-12T02:14:58.090936+00:00"
+        },
+        {
+          "path": "supplementary/Table_S7b_ode_results.csv",
+          "checksum_sha256": "b1bc7d406f199ae2c73e5264487ecf1faceddc3ffda3791b6b0d8c666812f7db",
+          "size_bytes": 4332,
+          "created": "2026-08-12T02:15:04.861091+00:00"
+        },
+        {
+          "path": "supplementary/Table_S7c_rwr_results.csv",
+          "checksum_sha256": "e873a1769aae0901edcb1852a072efb046d61b30027d52de87f8380ab440df36",
+          "size_bytes": 4309,
+          "created": "2026-08-12T02:15:10.674711+00:00"
+        },
+        {
+          "path": "supplementary/Table_S8_method_comparison.csv",
+          "checksum_sha256": "e3a672edd0f3e77eade0824e4cfe32adcb88f0e0d2c1fd89fbbf5b576459ba2a",
+          "size_bytes": 991,
+          "created": "2026-08-12T02:17:37.290626+00:00"
+        },
+        {
+          "path": "supplementary/Table_S9_stratified_results.csv",
+          "checksum_sha256": "07e534dad3ec189a3bdb5b3dc82121b6253d34bec0d6aea4f16ca908a2ad2705",
+          "size_bytes": 384,
+          "created": "2026-08-12T02:17:37.292626+00:00"
+        },
+        {
+          "path": "supplementary/master_test_level.csv",
+          "checksum_sha256": "dab89212f1cc932634fd709d0adbcffab65a7d5496a1eec49ad78371090a2384",
+          "size_bytes": 23994,
+          "created": "2026-08-12T02:17:37.295652+00:00"
+        },
+        {
+          "path": "supplementary/Fig_Data/network_summary.csv",
+          "checksum_sha256": "c0206ce429ad1d319274da33186e4cec530422da3904cd634b91cbec733090e5",
+          "size_bytes": 401,
+          "created": "2026-08-12T02:17:37.306651+00:00"
+        },
+        {
+          "path": "network/cytoscape/network.graphml",
+          "checksum_sha256": "5a5d89a62b5fe92a2d7eb841ecdc7a1630132b99be17a408fe9817a7e7459b25",
+          "size_bytes": 19686,
+          "created": "2026-08-12T02:17:42.206572+00:00"
+        },
+        {
+          "path": "network/cytoscape/network.sif",
+          "checksum_sha256": "1994725c25ba9c4dae264f18834047cfc7e49444bba5d04ae339c2b277e6d197",
+          "size_bytes": 1063,
+          "created": "2026-08-12T02:17:42.207572+00:00"
+        }
+      ],
+      "notes": ""
+    }
+  ],
+  "current_step": 6
+}

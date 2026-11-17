@@ -1,0 +1,4 @@
+network,method,complexity_label,complexity_score,n_correct,n_total,accuracy_pct
+Tillering,Algebraic,easy,1,30,30,100.0
+Tillering,ODE,easy,1,30,30,100.0
+Tillering,RWR,easy,1,30,30,100.0

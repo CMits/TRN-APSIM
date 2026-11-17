@@ -1,0 +1,2 @@
+network,species,n_nodes,n_edges,n_tests,t_effective,algebraic_acc,ode_acc,rwr_acc,algebraic_kappa,ode_kappa,rwr_kappa,algebraic_frs,ode_frs,rwr_frs,algebraic_dars,ode_dars,rwr_dars,frs_best,frs_best_band,dars_best,dars_best_band
+Tillering,Sorghum bicolor,30,40,30,30,100.0,100.0,100.0,1.0,1.0,1.0,11.0362,11.0362,11.0362,11.0362,11.0362,11.0362,11.0362,large-scale strong,11.0362,large-scale strong

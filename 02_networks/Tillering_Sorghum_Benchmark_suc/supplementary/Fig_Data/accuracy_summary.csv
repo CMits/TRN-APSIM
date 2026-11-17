@@ -1,0 +1,4 @@
+network,method,n_correct,n_total,accuracy_pct
+Tillering,Algebraic,30,30,100.0
+Tillering,ODE,30,30,100.0
+Tillering,RWR,30,30,100.0

@@ -1,0 +1,155 @@
+{
+  "_note": "concept -> [x, layer]. ONE skeleton, both panels: editing an entry moves that node in BOTH. --relayout to re-seed.",
+  "feedback_edges": [
+    [
+      "AUXIN_BUD",
+      "PIN_1_3_4_7"
+    ],
+    [
+      "Perception_SL",
+      "MAX1"
+    ],
+    [
+      "Perception_SL",
+      "MAX3"
+    ],
+    [
+      "Perception_SL",
+      "MAX4"
+    ],
+    [
+      "SMXL6_7_8",
+      "SMXL6_7_8_Transcription"
+    ]
+  ],
+  "skeleton": {
+    "ABA": [
+      0.0,
+      16
+    ],
+    "AUXIN_BUD": [
+      -2.3,
+      14
+    ],
+    "AUXIN_SHOOT": [
+      -2.3,
+      1
+    ],
+    "BRC1_2": [
+      -2.3,
+      13
+    ],
+    "BUD_RELEASE": [
+      -2.3,
+      17
+    ],
+    "CLAMT": [
+      0.0,
+      5
+    ],
+    "CXE": [
+      -2.3,
+      6
+    ],
+    "CYTOKININ": [
+      -4.6,
+      12
+    ],
+    "D14": [
+      -2.3,
+      8
+    ],
+    "D27": [
+      -6.9,
+      1
+    ],
+    "DECAPITATION": [
+      0.0,
+      0
+    ],
+    "FHY3_FAR1": [
+      4.6,
+      10
+    ],
+    "GIBBERELLIN": [
+      2.3,
+      17
+    ],
+    "HB21_40_53": [
+      2.3,
+      14
+    ],
+    "HIGH_R_FR": [
+      2.3,
+      1
+    ],
+    "LBO": [
+      2.3,
+      6
+    ],
+    "LOW_R_FR": [
+      6.9,
+      1
+    ],
+    "MAX1": [
+      0.0,
+      4
+    ],
+    "MAX2": [
+      0.0,
+      9
+    ],
+    "MAX3": [
+      -2.3,
+      2
+    ],
+    "MAX4": [
+      0.0,
+      3
+    ],
+    "NCED3": [
+      0.0,
+      15
+    ],
+    "PHENOTYPE": [
+      0.0,
+      18
+    ],
+    "PHYB": [
+      2.3,
+      2
+    ],
+    "PIFS": [
+      4.6,
+      12
+    ],
+    "PIN_1_3_4_7": [
+      2.3,
+      13
+    ],
+    "Perception_SL": [
+      0.0,
+      10
+    ],
+    "SMXL6_7_8": [
+      0.0,
+      11
+    ],
+    "SMXL6_7_8_Transcription": [
+      -4.6,
+      10
+    ],
+    "SPL9_15": [
+      0.0,
+      12
+    ],
+    "STRIGOLACTONE": [
+      0.0,
+      7
+    ],
+    "SUCROSE": [
+      2.3,
+      8
+    ]
+  }
+}

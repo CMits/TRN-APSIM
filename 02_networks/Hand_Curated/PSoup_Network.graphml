@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="label" for="node" attr.name="label" attr.type="string"/>
+  <key id="type" for="node" attr.name="type" attr.type="string"/>
+  <key id="sign" for="edge" attr.name="sign" attr.type="string"/>
+  <key id="influence" for="edge" attr.name="Influence" attr.type="string"/>
+  <graph id="PSoup_Network" edgedefault="directed">
+    <node id="CXE">
+      <data key="label">CXE</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="SL">
+      <data key="label">SL</data>
+      <data key="type">HORMONE</data>
+    </node>
+    <node id="LBO">
+      <data key="label">LBO</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="PIFs">
+      <data key="label">PIFs</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="BRC1_2">
+      <data key="label">BRC1_2</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="SPL9_15">
+      <data key="label">SPL9_15</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="CK">
+      <data key="label">CK</data>
+      <data key="type">HORMONE</data>
+    </node>
+    <node id="SUC">
+      <data key="label">SUC</data>
+      <data key="type">METABOLITE</data>
+    </node>
+    <node id="PhyB">
+      <data key="label">PhyB</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="Aux_Shoot">
+      <data key="label">Aux_Shoot</data>
+      <data key="type">HORMONE</data>
+    </node>
+    <node id="Decap_signal">
+      <data key="label">Decap_signal</data>
+      <data key="type">ENVIRONMENT</data>
+    </node>
+    <node id="NCED3">
+      <data key="label">NCED3</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="ABA">
+      <data key="label">ABA</data>
+      <data key="type">HORMONE</data>
+    </node>
+    <node id="Bud_release">
+      <data key="label">Bud_release</data>
+      <data key="type">PHENOTYPE</data>
+    </node>
+    <node id="Aux_Bud">
+      <data key="label">Aux_Bud</data>
+      <data key="type">HORMONE</data>
+    </node>
+    <node id="PAT_Bud">
+      <data key="label">PAT_Bud</data>
+      <data key="type">PROCESS</data>
+    </node>
+    <node id="Sustained_growth">
+      <data key="label">Sustained_growth</data>
+      <data key="type">PHENOTYPE</data>
+    </node>
+    <node id="GA">
+      <data key="label">GA</data>
+      <data key="type">HORMONE</data>
+    </node>
+    <node id="SMXL6_7_8_Transcription">
+      <data key="label">SMXL6_7_8_Transcription</data>
+      <data key="type">PROCESS</data>
+    </node>
+    <node id="SMXL6_7_8">
+      <data key="label">SMXL6_7_8</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="FHY3_FAR1">
+      <data key="label">FHY3_FAR1</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="Perception_SL">
+      <data key="label">Perception_SL</data>
+      <data key="type">PROCESS</data>
+    </node>
+    <node id="Low_R_FR">
+      <data key="label">Low_R_FR</data>
+      <data key="type">ENVIRONMENT</data>
+    </node>
+    <node id="High_R_FR">
+      <data key="label">High_R_FR</data>
+      <data key="type">ENVIRONMENT</data>
+    </node>
+    <node id="MAX2">
+      <data key="label">MAX2</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="D14">
+      <data key="label">D14</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="MAX3">
+      <data key="label">MAX3</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="D27">
+      <data key="label">D27</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="MAX4">
+      <data key="label">MAX4</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="MAX1">
+      <data key="label">MAX1</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="CLAMT">
+      <data key="label">CLAMT</data>
+      <data key="type">GENE</data>
+    </node>
+    <node id="HB21_40_53">
+      <data key="label">HB21_40_53</data>
+      <data key="type">GENE</data>
+    </node>
+    <edge id="e0" source="CXE" target="SL">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e1" source="LBO" target="SL">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e2" source="PIFs" target="BRC1_2">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e3" source="SPL9_15" target="BRC1_2">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e4" source="CK" target="BRC1_2">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e5" source="SUC" target="BRC1_2">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e6" source="PhyB" target="BRC1_2">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e7" source="Aux_Shoot" target="CK">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e8" source="SUC" target="CK">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e9" source="Decap_signal" target="Aux_Shoot">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e10" source="NCED3" target="ABA">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e11" source="ABA" target="Bud_release">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e12" source="SUC" target="Bud_release">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e13" source="CK" target="Bud_release">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e14" source="BRC1_2" target="Bud_release">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e15" source="Aux_Bud" target="PAT_Bud">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e16" source="Aux_Shoot" target="PAT_Bud">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e17" source="CK" target="PAT_Bud">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e18" source="Decap_signal" target="PAT_Bud">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e19" source="Decap_signal" target="SUC">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e20" source="Bud_release" target="Sustained_growth">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e21" source="SUC" target="Sustained_growth">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e22" source="PAT_Bud" target="Sustained_growth">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e23" source="GA" target="Sustained_growth">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e24" source="Aux_Bud" target="GA">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e25" source="SMXL6_7_8_Transcription" target="SMXL6_7_8">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e26" source="FHY3_FAR1" target="SMXL6_7_8">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e27" source="Perception_SL" target="SMXL6_7_8">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e28" source="Low_R_FR" target="FHY3_FAR1">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e29" source="High_R_FR" target="FHY3_FAR1">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e30" source="FHY3_FAR1" target="SPL9_15">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e31" source="SMXL6_7_8" target="SPL9_15">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e32" source="SMXL6_7_8" target="SMXL6_7_8_Transcription">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e33" source="SUC" target="MAX2">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e34" source="PhyB" target="MAX2">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e35" source="MAX2" target="Perception_SL">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e36" source="D14" target="Perception_SL">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e37" source="SL" target="Perception_SL">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e38" source="Aux_Shoot" target="MAX3">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e39" source="D27" target="MAX3">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e40" source="Perception_SL" target="MAX3">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e41" source="Perception_SL" target="MAX4">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e42" source="Aux_Shoot" target="MAX4">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e43" source="PhyB" target="MAX4">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e44" source="MAX3" target="MAX4">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e45" source="MAX4" target="MAX1">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e46" source="Perception_SL" target="MAX1">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e47" source="CLAMT" target="LBO">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e48" source="MAX1" target="CLAMT">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e49" source="High_R_FR" target="PhyB">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e50" source="Low_R_FR" target="PhyB">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e51" source="High_R_FR" target="PIFs">
+      <data key="sign">negative</data>
+      <data key="influence">inhibition</data>
+    </edge>
+    <edge id="e52" source="Low_R_FR" target="HB21_40_53">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e53" source="BRC1_2" target="HB21_40_53">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e54" source="HB21_40_53" target="NCED3">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+    <edge id="e55" source="SMXL6_7_8" target="CK">
+      <data key="sign">positive</data>
+      <data key="influence">stimulation</data>
+    </edge>
+  </graph>
+</graphml>

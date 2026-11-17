@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "flash_p_version": "1.1.0-4-g1b5bb08",
+    "build_variant": "debiasing",
+    "phenotype": "Tillering",
+    "phenotype_node": "Tiller_Number",
+    "species": "Sorghum bicolor",
+    "created": "2026-08-12",
+    "total_nodes": 30
+  },
+  "annotations": [
+    {
+      "n": "D27",
+      "fn": "DWARF27 (beta-carotene isomerase)",
+      "ty": "G",
+      "desc": "First committed step of strigolactone biosynthesis; isomerises all-trans- to 9-cis-beta-carotene.",
+      "src": true
+    },
+    {
+      "n": "MAX3",
+      "fn": "MORE AXILLARY GROWTH3 / CCD7",
+      "ty": "G",
+      "desc": "Carotenoid cleavage dioxygenase 7 acting on 9-cis-beta-carotene in SL biosynthesis.",
+      "src": false
+    },
+    {
+      "n": "MAX4",
+      "fn": "MORE AXILLARY GROWTH4 / CCD8",
+      "ty": "G",
+      "desc": "Carotenoid cleavage dioxygenase 8; produces carlactone, the SL precursor.",
+      "src": false
+    },
+    {
+      "n": "MAX1",
+      "fn": "MORE AXILLARY GROWTH1 (CYP711A carlactone oxidase)",
+      "ty": "G",
+      "desc": "Cytochrome P450 converting carlactone to carlactonoic acid; sorghum SbMAX1a-d. Placed downstream of MAX4 (carlactone is the SbCCD8 product and the SbMAX1 substrate) on the restored E043 citation 10.1111/nph.17737, verified in that paper's open-access full text.",
+      "src": false
+    },
+    {
+      "n": "CLAMT",
+      "fn": "Carlactonoic acid methyltransferase",
+      "ty": "G",
+      "desc": "Methylates carlactonoic acid to methyl carlactonoate, the LBO substrate.",
+      "src": false
+    },
+    {
+      "n": "LBO",
+      "fn": "LATERAL BRANCHING OXIDOREDUCTASE",
+      "ty": "G",
+      "desc": "2-oxoglutarate dioxygenase producing the bioactive branching-suppressing SL species.",
+      "src": false
+    },
+    {
+      "n": "CXE",
+      "fn": "Carboxylesterase strigolactone hydrolase (CXE15/CXE20 clade)",
+      "ty": "G",
+      "desc": "Hydrolyses strigolactone, setting the degradation side of the SL pool balance.",
+      "src": true
+    },
+    {
+      "n": "Strigolactone",
+      "fn": "Strigolactone",
+      "ty": "H",
+      "desc": "Carotenoid-derived hormone that suppresses axillary bud outgrowth; pool set by LBO/MAX4 synthesis vs CXE turnover.",
+      "src": false
+    },
+    {
+      "n": "D14",
+      "fn": "DWARF14 (alpha/beta-hydrolase SL receptor)",
+      "ty": "G",
+      "desc": "SL receptor; with the MAX2/D3 F-box forms the SCF complex that degrades SMXL678.",
+      "src": false
+    },
+    {
+      "n": "MAX2",
+      "fn": "MORE AXILLARY GROWTH2 / D3 F-box",
+      "ty": "G",
+      "desc": "F-box component of the SCF-MAX2 complex; obligate co-receptor partner of D14.",
+      "src": false
+    },
+    {
+      "n": "SMXL678",
+      "fn": "SMXL6/7/8 (D53-type) SL-signalling repressor clade",
+      "ty": "PC",
+      "desc": "Composite of the redundant D53/SMXL6-7-8 repressors; degraded by D14+MAX2, represses BRC1 and SPL9/15. MODELING RISK: its only activator is FHY3FAR1 (N022/E041), which is Arabidopsis-only and Step 1.6 quarantined; real D53/SMXL turnover is post-translational via the D14-MAX2 gate, so fhy3/far1 or light perturbations collapse this node further than the literature supports. See network.json metadata.modeling_risks.",
+      "src": false
+    },
+    {
+      "n": "SPL9_15",
+      "fn": "SQUAMOSA PROMOTER BINDING PROTEIN-LIKE 9/15 (IPA1-type)",
+      "ty": "G",
+      "desc": "SPL transcription factors that directly activate BRC1/TB1 transcription; repressed by SMXL678 and FHY3/FAR1.",
+      "src": false
+    },
+    {
+      "n": "PHYB",
+      "fn": "PHYTOCHROME B",
+      "ty": "G",
+      "desc": "Red/far-red photoreceptor; in sorghum active PHYB represses TB1/BRC1 and permits tiller bud outgrowth.",
+      "src": false
+    },
+    {
+      "n": "PIFS",
+      "fn": "PHYTOCHROME-INTERACTING FACTORS (PIF4/5/7 clade)",
+      "ty": "G",
+      "desc": "bHLH factors that activate BRC1 under low R:FR; destabilised when phytochrome is active.",
+      "src": false
+    },
+    {
+      "n": "FHY3FAR1",
+      "fn": "FAR-RED ELONGATED HYPOCOTYL3 / FAR-RED IMPAIRED RESPONSE1",
+      "ty": "G",
+      "desc": "Transposase-derived TF pair linking light quality to the SL module (SMXL678 up, SPL9/15 down). Arabidopsis-only, Step 1.6 quarantined evidence on a Sorghum bicolor network; it is SMXL678's sole activator, so predictions for fhy3/far1 perturbations are low-confidence. See network.json metadata.modeling_risks.",
+      "src": false
+    },
+    {
+      "n": "BRC1",
+      "fn": "BRANCHED1 / TEOSINTE BRANCHED1 (SbTB1)",
+      "ty": "G",
+      "desc": "TCP master repressor of axillary bud outgrowth; integrator of SL, light, sugar and cytokinin inputs.",
+      "src": false
+    },
+    {
+      "n": "GT1",
+      "fn": "GRASSY TILLERS1 (HD-ZIP I)",
+      "ty": "G",
+      "desc": "Homeodomain factor acting downstream of TB1/BRC1 to enforce axillary bud dormancy.",
+      "src": false
+    },
+    {
+      "n": "NCED3",
+      "fn": "9-cis-epoxycarotenoid dioxygenase 3",
+      "ty": "G",
+      "desc": "Rate-limiting ABA biosynthesis enzyme; source node in this model.",
+      "src": true
+    },
+    {
+      "n": "ABA",
+      "fn": "Abscisic acid",
+      "ty": "H",
+      "desc": "Dormancy hormone that blocks bud release.",
+      "src": false
+    },
+    {
+      "n": "PIN1",
+      "fn": "PIN-FORMED1 auxin efflux carrier",
+      "ty": "G",
+      "desc": "Polar auxin efflux carrier enabling auxin export from the axillary bud.",
+      "src": true
+    },
+    {
+      "n": "Auxin_Shoot",
+      "fn": "Shoot-apex-derived auxin",
+      "ty": "H",
+      "desc": "Apical auxin in the main stem; the apical dominance signal.",
+      "src": false
+    },
+    {
+      "n": "Auxin_Bud",
+      "fn": "Axillary bud auxin export",
+      "ty": "H",
+      "desc": "Auxin produced/exported by the bud; canalisation of bud auxin into the stem sustains outgrowth.",
+      "src": false
+    },
+    {
+      "n": "Cytokinin",
+      "fn": "Cytokinin",
+      "ty": "H",
+      "desc": "Bud-activating hormone; represses BRC1 and promotes bud auxin export.",
+      "src": true
+    },
+    {
+      "n": "Gibberellin",
+      "fn": "Gibberellin",
+      "ty": "H",
+      "desc": "Suppresses tiller number in cereals.",
+      "src": true
+    },
+    {
+      "n": "Sucrose",
+      "fn": "Sucrose",
+      "ty": "M",
+      "desc": "Bud-available sugar; the fastest decapitation signal, repressing BRC1 and promoting bud release.",
+      "src": false
+    },
+    {
+      "n": "Decapitation_Signal",
+      "fn": "Decapitation / apex removal",
+      "ty": "E",
+      "desc": "Removal of the shoot apex: lowers apical auxin and redirects sucrose to axillary buds.",
+      "src": true
+    },
+    {
+      "n": "High_R_FR",
+      "fn": "High red:far-red ratio (low density / open canopy)",
+      "ty": "E",
+      "desc": "Light quality signal activating PHYB and destabilising PIFs.",
+      "src": true
+    },
+    {
+      "n": "Low_R_FR",
+      "fn": "Low red:far-red ratio (shade / high density)",
+      "ty": "E",
+      "desc": "Canopy shade signal inactivating PHYB and FHY3/FAR1.",
+      "src": true
+    },
+    {
+      "n": "Bud_Release",
+      "fn": "Axillary bud release from dormancy",
+      "ty": "PR",
+      "desc": "Process node: transition of the axillary bud from dormancy to sustained outgrowth.",
+      "src": false
+    },
+    {
+      "n": "Tiller_Number",
+      "fn": "Tiller number",
+      "ty": "P",
+      "desc": "Number of tillers produced per plant - the modelled phenotype.",
+      "src": false
+    }
+  ]
+}

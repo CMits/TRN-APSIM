@@ -1,0 +1,331 @@
+{
+  "metadata": {
+    "flash_p_version": "1.1.0-4-g1b5bb08",
+    "build_variant": "debiasing",
+    "phenotype": "Tillering",
+    "phenotype_node": "Tiller_Number",
+    "species": "Sorghum bicolor",
+    "created": "2026-08-12",
+    "total_equations": 30
+  },
+  "parameters": {
+    "epsilon": 0.1,
+    "K": 10.0,
+    "activator_floor": 0.01,
+    "damping": 0.7,
+    "direction_threshold": 0.05,
+    "max_iterations": 100,
+    "convergence_tolerance": 0.0001
+  },
+  "equations": [
+    {
+      "n": "D27",
+      "ty": "G",
+      "src": true,
+      "a": [],
+      "inh": [],
+      "f": "D27 = gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "MAX3",
+      "ty": "G",
+      "src": false,
+      "a": [
+        "D27"
+      ],
+      "inh": [],
+      "f": "MAX3 = max(D27, 0.01)^(1/1) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "MAX4",
+      "ty": "G",
+      "src": false,
+      "a": [
+        "MAX3"
+      ],
+      "inh": [],
+      "f": "MAX4 = max(MAX3, 0.01)^(1/1) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "MAX1",
+      "ty": "G",
+      "src": false,
+      "a": [
+        "MAX4"
+      ],
+      "inh": [],
+      "f": "MAX1 = max(MAX4, 0.01)^(1/1) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "CLAMT",
+      "ty": "G",
+      "src": false,
+      "a": [
+        "MAX1"
+      ],
+      "inh": [],
+      "f": "CLAMT = max(MAX1, 0.01)^(1/1) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "LBO",
+      "ty": "G",
+      "src": false,
+      "a": [
+        "CLAMT"
+      ],
+      "inh": [],
+      "f": "LBO = max(CLAMT, 0.01)^(1/1) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "CXE",
+      "ty": "G",
+      "src": true,
+      "a": [],
+      "inh": [],
+      "f": "CXE = gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "Strigolactone",
+      "ty": "H",
+      "src": false,
+      "a": [
+        "MAX4",
+        "LBO"
+      ],
+      "inh": [
+        "CXE"
+      ],
+      "f": "Strigolactone = (max(MAX4, 0.01) * max(LBO, 0.01))^(1/2) * min(1/max(CXE, 0.1), 10.0) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "D14",
+      "ty": "G",
+      "src": false,
+      "a": [
+        "Strigolactone"
+      ],
+      "inh": [],
+      "f": "D14 = max(Strigolactone, 0.01)^(1/1) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "MAX2",
+      "ty": "G",
+      "src": false,
+      "a": [
+        "D14"
+      ],
+      "inh": [],
+      "f": "MAX2 = max(D14, 0.01)^(1/1) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "SMXL678",
+      "ty": "PC",
+      "src": false,
+      "a": [
+        "FHY3FAR1"
+      ],
+      "inh": [
+        "D14",
+        "MAX2"
+      ],
+      "f": "SMXL678 = max(FHY3FAR1, 0.01)^(1/1) * min(1/max(D14 * MAX2, 0.1), 10.0) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "SPL9_15",
+      "ty": "G",
+      "src": false,
+      "a": [],
+      "inh": [
+        "SMXL678",
+        "FHY3FAR1"
+      ],
+      "f": "SPL9_15 = min(1/max(SMXL678 * FHY3FAR1, 0.1), 10.0) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "PHYB",
+      "ty": "G",
+      "src": false,
+      "a": [
+        "High_R_FR"
+      ],
+      "inh": [
+        "Low_R_FR"
+      ],
+      "f": "PHYB = max(High_R_FR, 0.01)^(1/1) * min(1/max(Low_R_FR, 0.1), 10.0) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "PIFS",
+      "ty": "G",
+      "src": false,
+      "a": [],
+      "inh": [
+        "High_R_FR"
+      ],
+      "f": "PIFS = min(1/max(High_R_FR, 0.1), 10.0) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "FHY3FAR1",
+      "ty": "G",
+      "src": false,
+      "a": [
+        "High_R_FR"
+      ],
+      "inh": [
+        "Low_R_FR"
+      ],
+      "f": "FHY3FAR1 = max(High_R_FR, 0.01)^(1/1) * min(1/max(Low_R_FR, 0.1), 10.0) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "BRC1",
+      "ty": "G",
+      "src": false,
+      "a": [
+        "SPL9_15",
+        "PIFS"
+      ],
+      "inh": [
+        "SMXL678",
+        "PHYB",
+        "Cytokinin",
+        "Sucrose"
+      ],
+      "f": "BRC1 = (max(SPL9_15, 0.01) * max(PIFS, 0.01))^(1/2) * min(1/max(SMXL678 * PHYB * Cytokinin * Sucrose, 0.1), 10.0) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "GT1",
+      "ty": "G",
+      "src": false,
+      "a": [
+        "BRC1"
+      ],
+      "inh": [],
+      "f": "GT1 = max(BRC1, 0.01)^(1/1) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "NCED3",
+      "ty": "G",
+      "src": true,
+      "a": [],
+      "inh": [],
+      "f": "NCED3 = gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "ABA",
+      "ty": "H",
+      "src": false,
+      "a": [
+        "NCED3"
+      ],
+      "inh": [],
+      "f": "ABA = max(NCED3, 0.01)^(1/1) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "PIN1",
+      "ty": "G",
+      "src": true,
+      "a": [],
+      "inh": [],
+      "f": "PIN1 = gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "Auxin_Shoot",
+      "ty": "H",
+      "src": false,
+      "a": [],
+      "inh": [
+        "Decapitation_Signal"
+      ],
+      "f": "Auxin_Shoot = min(1/max(Decapitation_Signal, 0.1), 10.0) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "Auxin_Bud",
+      "ty": "H",
+      "src": false,
+      "a": [
+        "PIN1",
+        "Cytokinin"
+      ],
+      "inh": [
+        "Auxin_Shoot"
+      ],
+      "f": "Auxin_Bud = (max(PIN1, 0.01) * max(Cytokinin, 0.01))^(1/2) * min(1/max(Auxin_Shoot, 0.1), 10.0) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "Cytokinin",
+      "ty": "H",
+      "src": true,
+      "a": [],
+      "inh": [],
+      "f": "Cytokinin = gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "Gibberellin",
+      "ty": "H",
+      "src": true,
+      "a": [],
+      "inh": [],
+      "f": "Gibberellin = gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "Sucrose",
+      "ty": "M",
+      "src": false,
+      "a": [
+        "Decapitation_Signal"
+      ],
+      "inh": [],
+      "f": "Sucrose = max(Decapitation_Signal, 0.01)^(1/1) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "Decapitation_Signal",
+      "ty": "E",
+      "src": true,
+      "a": [],
+      "inh": [],
+      "f": "Decapitation_Signal = gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "High_R_FR",
+      "ty": "E",
+      "src": true,
+      "a": [],
+      "inh": [],
+      "f": "High_R_FR = gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "Low_R_FR",
+      "ty": "E",
+      "src": true,
+      "a": [],
+      "inh": [],
+      "f": "Low_R_FR = gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "Bud_Release",
+      "ty": "PR",
+      "src": false,
+      "a": [
+        "Sucrose"
+      ],
+      "inh": [
+        "BRC1",
+        "GT1",
+        "ABA"
+      ],
+      "f": "Bud_Release = max(Sucrose, 0.01)^(1/1) * min(1/max(BRC1 * GT1 * ABA, 0.1), 10.0) * gene_modifier + exogenous_supply"
+    },
+    {
+      "n": "Tiller_Number",
+      "ty": "P",
+      "src": false,
+      "a": [
+        "Auxin_Bud",
+        "Bud_Release"
+      ],
+      "inh": [
+        "Gibberellin"
+      ],
+      "f": "Tiller_Number = (max(Auxin_Bud, 0.01) * max(Bud_Release, 0.01))^(1/2) * min(1/max(Gibberellin, 0.1), 10.0) * gene_modifier + exogenous_supply"
+    }
+  ]
+}

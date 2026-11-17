@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "flash_p_version": "1.1.0-4-g1b5bb08",
+    "phenotype": "Tillering",
+    "species": "Sorghum bicolor",
+    "created": "2026-08-12"
+  },
+  "summary": {
+    "best_method": "algebraic",
+    "best_accuracy": 1.0,
+    "all_methods_perfect": true,
+    "recommendation": "Network is excellent. All three methods achieve perfect accuracy (100%, κ=1.0, MCC=1.0). No refinement needed. Ready for export.",
+    "tie_breaking_note": "All methods tied at 100% accuracy, κ=1.0, MCC=1.0. Selected algebraic as best due to simplicity and computational efficiency."
+  },
+  "comparison": [
+    {
+      "method": "algebraic",
+      "accuracy": 1.0,
+      "kappa": 1.0,
+      "mcc": 1.0,
+      "convergence_rate": 1.0,
+      "best_params": "None (no parameter tuning required)",
+      "strengths": "Perfect accuracy. Simple and interpretable. Fast computation. No parameter sensitivity.",
+      "weaknesses": "None observed.",
+      "failures": []
+    },
+    {
+      "method": "ode",
+      "accuracy": 1.0,
+      "kappa": 1.0,
+      "mcc": 1.0,
+      "convergence_rate": 1.0,
+      "best_params": "K=0.5, n=2 (from 24-combination sensitivity sweep)",
+      "strengths": "Perfect accuracy. Biologically realistic Hill equations. Robust to parameter variations.",
+      "weaknesses": "None observed.",
+      "failures": []
+    },
+    {
+      "method": "rwr",
+      "accuracy": 1.0,
+      "kappa": 1.0,
+      "mcc": 1.0,
+      "convergence_rate": 1.0,
+      "best_params": "alpha=0.5 (from 9-point sensitivity sweep)",
+      "strengths": "Perfect accuracy. Network topology-based propagation. Intuitive diffusion interpretation.",
+      "weaknesses": "None observed.",
+      "failures": []
+    }
+  ]
+}

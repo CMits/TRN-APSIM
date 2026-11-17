@@ -1,0 +1,29 @@
+#meta {"metadata": {"flash_p_version": "1.1.0-4-g1b5bb08", "build_variant": "debiasing", "phenotype": "Tillering", "species": "Sorghum bicolor", "created": "2026-08-12", "total_perturbations": null}}
+perturbations[27]{id,g,pt,ed,sp,d,v}:
+T001	D14	knockout	up	Oryza sativa	10.3390/ijms251910778	
+T002	MAX2	knockout	up	Oryza sativa	10.1038/nature12878	
+T003	SMXL678	gain_of_function	up	Oryza sativa	10.3390/ijms251910778	
+T004	SMXL678	loss_of_function	dn	Oryza sativa	10.3390/ijms251910778	
+T005	MAX4	knockout	up	Oryza sativa	10.3390/plants13233349	
+T006	MAX3	knockout	up	Oryza sativa	10.1016/j.molp.2020.03.009	
+T007	D27	knockout	up	Oryza sativa	10.1093/g3journal/jkae147	
+T008	BRC1	loss_of_function	up	Oryza sativa	10.1093/plphys/kiaf309	
+T009	BRC1	overexpression	dn	Oryza sativa	10.1093/plphys/kiaf309	
+T010	SPL9_15	gain_of_function	dn	Oryza sativa	10.1038/ng.591	
+T011	PHYB	loss_of_function	dn	Sorghum bicolor	10.1111/j.1365-3040.2009.02050.x	
+T012	MAX1	loss_of_function	up	Arabidopsis thaliana	10.1016/j.devcel.2005.01.009	
+T013	CLAMT	loss_of_function	up	Arabidopsis thaliana	10.1073/pnas.2111565119	
+T014	CXE	overexpression	up	Arabidopsis thaliana	10.1038/s41477-021-01011-y	
+T015	LBO	loss_of_function	up	Arabidopsis thaliana	10.1073/pnas.1601729113	
+T016	FHY3FAR1	loss_of_function	dn	Arabidopsis thaliana	10.1038/s41467-020-15893-7	
+T017	PIFS	loss_of_function	up	Oryza sativa	10.1111/nph.17872	
+T018	PIFS	overexpression	dn	Oryza sativa	10.1111/nph.17872	
+T019	GT1	loss_of_function	up	Oryza sativa	10.1104/pp.19.00717	
+T020	NCED3	knockdown	up	Oryza sativa	10.3389/fpls.2025.1706603	
+T021	PIN1	knockout	dn	Oryza sativa	10.1038/srep35955	
+T022	MAX2	loss_of_function	up	Sorghum bicolor	10.3389/fpls.2017.01527	
+T023	MAX2	defoliation_induced	up	Sorghum bicolor	10.1111/j.1365-3040.2009.02050.x	
+T024	Sucrose	treatment_high	up	Arabidopsis thaliana	10.1111/pce.12500	
+T025	Cytokinin	treatment_high	up	Oryza sativa	10.3389/fpls.2022.837136	
+T026	Strigolactone	treatment_high	dn	Oryza sativa	10.1002/ps.5456	
+T027	ABA	treatment_high	dn	Oryza sativa	10.1093/plphys/kiaf517	

@@ -1,0 +1,261 @@
+Publication,Mutant,Psoup Treatment,Actual tiller number,Significant ranking,Species
+"Aguilar-Martinez et al., 2007, Experiment 1",WT,WT,2.5,1,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 1",brc1,BRC1_2_n,5.5,3,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 1",decapitated,Decap_signal_n,3.1,2,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 1",decapitated brc1,"Decap_signal_n, BRC1_2_n",6,3,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 2",wt+low density,"WT, +High_R_FR",2.5,2,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 2",wt+high density,"WT, +Low_R_FR",0,1,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 2",brc1+low density,"BRC1_2_n,+ High_R_FR",8,4,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 2",brc1+high density,"BRC1_2_n,+ Low_R_FR",4,3,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 3",wt,WT,2,1,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 3",max1,MAX1_n,10.3,3,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 3",brc1,BRC1_2_n,9.5,3,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 3",brc1 max1,"BRC1_2_n, MAX_1_n",8,2,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 4",wt,WT,2,1,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 4",max2,MAX2_n,12.5,4,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 4",brc1,BRC1_2_n,9.2,3,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 4",brc1 max2,"BRC1_2_n, MAX_2_n",7.9,2,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 5",wt,WT,3,1,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 5",max4,MAX4_n,9.1,2,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 5",brc1,BRC1_2_n,10,2,Arabidopsis
+"Aguilar-Martinez et al., 2007, Experiment 5",brc1 max4,"BRC1_2_n, MAX_4_n",8.7,2,Arabidopsis
+"Bennet et al ., 2006, Experiment 1",wt,WT,2,1,Arabidopsis
+"Bennet et al ., 2006, Experiment 1",max1,MAX1_n,7.2,2,Arabidopsis
+"Bennet et al ., 2006, Experiment 1",max2,MAX2_n,10,4,Arabidopsis
+"Bennet et al ., 2006, Experiment 1",max3,MAX3_n,8,3,Arabidopsis
+"Bennet et al ., 2006, Experiment 1",max4,MAX4_n,6.5,3,Arabidopsis
+"Bennet et al ., 2006, Experiment 2",max4+iaa,"MAX4_n, +Aux_Shoot",1.5,2,Arabidopsis
+"Bennet et al ., 2006, Experiment 2",max4,MAX4_n,2.3,3,Arabidopsis
+"Bennet et al ., 2006, Experiment 2",WT,WT,0.4,1,Arabidopsis
+"Bannet et al ., 2016, Experiment 1",wt,WT,2,1,Arabidopsis
+"Bannet et al ., 2016, Experiment 1",max2,MAX2_n,11.3,3,Arabidopsis
+"Bannet et al ., 2016, Experiment 1",d14,D14_n,13.5,4,Arabidopsis
+"Bannet et al ., 2016, Experiment 1",pin1,PIN_1_3_4_7_n,3,1,Arabidopsis
+"Bannet et al ., 2016, Experiment 1",max2 pin1,"PIN_1_3_4_7_n, MAX2_n",3.6,1,Arabidopsis
+"Bannet et al ., 2016, Experiment 1",d14pin1,"D14_n, PIN_1_3_4_7_n",4,2,Arabidopsis
+"Bannet et al ., 2016, Experiment 2",WT,WT,2,1,Arabidopsis
+"Bannet et al ., 2016, Experiment 2",brc1,BRC1_2_n,10,3,Arabidopsis
+"Bannet et al ., 2016, Experiment 2",spl915,SPL9_15_n,1.9,2,Arabidopsis
+"Bannet et al ., 2016, Experiment 2",d14,D14_n,15,4,Arabidopsis
+"Bannet et al ., 2016, Experiment 3",max2+sl,"MAX2_n, +SL",4.1,5,Arabidopsis
+"Bannet et al ., 2016, Experiment 3",max4+sl,"MAX4_n, +SL",0.3,1,Arabidopsis
+"Bannet et al ., 2016, Experiment 3",spl915+sl,"SPL9_15_n, +SL",0.15,1,Arabidopsis
+"Bannet et al ., 2016, Experiment 3",max2,MAX2_n,3.5,5,Arabidopsis
+"Bannet et al ., 2016, Experiment 3","spl9,15",SPL9_15_n,2,3,Arabidopsis
+"Bannet et al ., 2016, Experiment 3",max4,MAX4_n,2.5,4,Arabidopsis
+"Bannet et al ., 2016, Experiment 3",WT+sl,"WT, +SL",0.1,1,Arabidopsis
+"Bannet et al ., 2016, Experiment 3",WT,WT,2,2,Arabidopsis
+"Bannet et al ., 2016, Experiment 4",wt,WT,2.5,1,Arabidopsis
+"Bannet et al ., 2016, Experiment 4",max2,MAX2_n,13.3,2,Arabidopsis
+"Bannet et al ., 2016, Experiment 4",d14,D14_n,12.2,2,Arabidopsis
+"Bannet et al ., 2016, Experiment 5",wt,WT,3.2,1,Arabidopsis
+"Bannet et al ., 2016, Experiment 5",max4,MAX4_n,15,2,Arabidopsis
+"Bannet et al ., 2016, Experiment 5",d14,D14_n,14.7,2,Arabidopsis
+"Booker et al., 2005, Experiment 1",WT ,WT,3,1,Arabidopsis
+"Booker et al., 2005, Experiment 1",max1,MAX1_n,6,2,Arabidopsis
+"Booker et al., 2005, Experiment 1",max2,MAX2_n,7.5,3,Arabidopsis
+"Booker et al., 2005, Experiment 1",max4,MAX4_n,6.5,2,Arabidopsis
+"Booker et al., 2005, Experiment 1",max1max2,"MAX2_n, MAX1_n",9,4,Arabidopsis
+"Booker et al., 2005, Experiment 1",max2max4,"MAX2_n, MAX4_n",8.1,3,Arabidopsis
+"Booker et al., 2005, Experiment 1",max1max4,"MAX4_n, MAX1_n",7,2,Arabidopsis
+"Challis et al., 2013, Experiment 1",WT,WT,6,1,Arabidopsis
+"Challis et al., 2013, Experiment 1",max1,MAX1_n,13,2,Arabidopsis
+"Chevalier et al., 2014, Experiment 1",brc1,BRC1_2_n,7.6,2,Arabidopsis
+"Chevalier et al., 2014, Experiment 1",d14,D14_n,6.6,2,Arabidopsis
+"Chevalier et al., 2014, Experiment 1",d14brc1,"BRC1_2_n, D14_n",10,3,Arabidopsis
+"Chevalier et al., 2014, Experiment 1",WT,WT,2.7,1,Arabidopsis
+"Chevalier et al., 2014, Experiment 2",wt,WT,2.5,1,Arabidopsis
+"Chevalier et al., 2014, Experiment 2",max2,MAX2_n,8,2,Arabidopsis
+"Chevalier et al., 2014, Experiment 2",d14,D14_n,8.1,2,Arabidopsis
+"Chevalier et al., 2014, Experiment 2",d14 max2,"D14_n, MAX2_n",7.8,2,Arabidopsis
+"Crawford et al.,2010, Experiment 1",WT,WT,3,2,Arabidopsis
+"Crawford et al.,2010, Experiment 1",WT+sl,"WT, +SL",1.7,1,Arabidopsis
+"Crawford et al.,2010, Experiment 1",max1,MAX1_n,6,3,Arabidopsis
+"Crawford et al.,2010, Experiment 1",max1+sl,"MAX1_n, +SL",1.8,1,Arabidopsis
+"Crawford et al.,2010, Experiment 1",max2,MAX2_n,6,3,Arabidopsis
+"Crawford et al.,2010, Experiment 1",max2+sl,"MAX2_n, +SL",5.5,3,Arabidopsis
+"Crawford et al.,2010, Experiment 1",max4,MAX4_n,5,3,Arabidopsis
+"Crawford et al.,2010, Experiment 1",max4+sl,"MAX4_n, +SL",1.9,1,Arabidopsis
+"de Saint german et al.,2016, Experiment 1",WT,WT,4,1,Arabidopsis
+"de Saint german et al.,2016, Experiment 1",d14,D14_n,9.7,2,Arabidopsis
+"de Saint german et al.,2016, Experiment 2",wt,WT,9,2,Arabidopsis
+"de Saint german et al.,2016, Experiment 2",wt+sl,"WT, +SL",5,1,Arabidopsis
+"Fichtner et al., 2022, Experiment 1",wt+ low density,"WT, +High_R_FR",2.7,2,Arabidopsis
+"Fichtner et al., 2022, Experiment 1",wt+ high density,"WT, +Low_R_FR",0,1,Arabidopsis
+"Fichtner et al., 2022, Experiment 1",max2+ low density,"MAX2_n, +High_R_FR",6.2,3,Arabidopsis
+"Fichtner et al., 2022, Experiment 1",max2+ high density,"MAX2_n, +Low_R_FR",3,2,Arabidopsis
+"Fichtner et al., 2022, Experiment 2",wt+ low density,"WT, +High_R_FR",3.5,2,Arabidopsis
+"Fichtner et al., 2022, Experiment 2",wt+ high density,"WT, +Low_R_FR",1,1,Arabidopsis
+"Fichtner et al., 2022, Experiment 2",max4+ low density,"MAX4_n, +High_R_FR",11.4,4,Arabidopsis
+"Fichtner et al., 2022, Experiment 2",max4+ high density,"MAX4_n, +Low_R_FR",6.5,3,Arabidopsis
+"Fichtner et al., 2022, Experiment 3",WT,WT,4.5,1,Arabidopsis
+"Fichtner et al., 2022, Experiment 3",max3,MAX3_n,13.5,4,Arabidopsis
+"Fichtner et al., 2022, Experiment 3",max1,MAX1_n,11,3,Arabidopsis
+"Fichtner et al., 2022, Experiment 3",lbo,LBO_n,7,2,Arabidopsis
+"Fichtner et al., 2022, Experiment 3",max2,MAX2_n,14,4,Arabidopsis
+"Fichtner et al., 2022, Experiment 3",d14,D14_n,14,4,Arabidopsis
+"Fichtner et al., 2022, Experiment 3",smxl678,SMXL6_7_8_n,3.3,1,Arabidopsis
+"Fichtner et al., 2022, Experiment 3",brc1,BRC1_2_n,9,2,Arabidopsis
+"González-Grandío et al.,2017, Experiment 1",hb214053,HB21_40_53_n,3,3,Arabidopsis
+"González-Grandío et al.,2017, Experiment 1",WT,WT,3,3,Arabidopsis
+"González-Grandío et al.,2017, Experiment 1",hb214053+fr,"HB21_40_53_n, +Low_R_FR",3,3,Arabidopsis
+"González-Grandío et al.,2017, Experiment 1",WT+fr,"WT, +Low_R_FR",1.6,1,Arabidopsis
+"González-Grandío et al.,2017, Experiment 1",hb214053+fr+aba,"HB21_40_53_n, +Low_R_FR, +ABA",1.9,2,Arabidopsis
+"González-Grandío et al.,2017, Experiment 1",WT+fr+aba,"WT, +Low_R_FR, +ABA",1.5,1,Arabidopsis
+"González-Grandío et al.,2017, Experiment 1",hb214053+aba,"HB21_40_53_n, +ABA",2.9,3,Arabidopsis
+"González-Grandío et al.,2017, Experiment 1",WT+aba,"WT, +ABA",2.5,2,Arabidopsis
+"González-Grandío et al.,2017, Experiment 2",nced+fr,"NCED3_n, +Low_R_FR",2.6,2,Arabidopsis
+"González-Grandío et al.,2017, Experiment 2",nced,NCED3_n,3.2,3,Arabidopsis
+"González-Grandío et al.,2017, Experiment 2",wt,WT,2.9,3,Arabidopsis
+"González-Grandío et al.,2017, Experiment 2",wt+fr,"WT, +Low_R_FR",1.1,1,Arabidopsis
+"González-Grandío et al.,2017, Experiment 3",wt,WT,2.1,2,Arabidopsis
+"González-Grandío et al.,2017, Experiment 3",wt+fr,"WT, +Low_R_FR",1.6,1,Arabidopsis
+"González-Grandío et al.,2017, Experiment 3",hb214053,HB21_40_53_n,4,3,Arabidopsis
+"González-Grandío et al.,2017, Experiment 3",hb214053+fr,"HB21_40_53_n, +Low_R_FR",3.8,3,Arabidopsis
+"González-Grandío et al.,2017, Experiment 3",brc1,BRC1_2_n,7.6,5,Arabidopsis
+"González-Grandío et al.,2017, Experiment 3",brc1+fr,"BRC1_2_n, +Low_R_FR",4.3,4,Arabidopsis
+"González-Grandío et al.,2017, Experiment 3",hb214053brc1,"BRC1_2_n, HB21_40_53_n",8,5,Arabidopsis
+"González-Grandío et al.,2017, Experiment 3",hb214053brc1+fr,"BRC1_2_n, HB21_40_53_n, +Low_R_FR",8,5,Arabidopsis
+"Kameoka et al., 2016, Experiment 1",WT,WT,8.1,1,Arabidopsis
+"Kameoka et al., 2016, Experiment 1",d14,D14_n,14.6,2,Arabidopsis
+"Liang et al., 2016, Experiment 1",WT,WT,2,1,Arabidopsis
+"Liang et al., 2016, Experiment 1",max2,MAX2_n,14,2,Arabidopsis
+"Liang et al., 2016, Experiment 2",wt,WT,5.2,1,Arabidopsis
+"Liang et al., 2016, Experiment 2",d14,D14_n,25,2,Arabidopsis
+"Ligerot et al.,2017, Experiment 1",WT,WT,5.5,1,Arabidopsis
+"Ligerot et al.,2017, Experiment 1",max2,MAX2_n,16,3,Arabidopsis
+"Ligerot et al.,2017, Experiment 1",max4,MAX4_n,11,2,Arabidopsis
+"Luo et al., 2019, Experiment 1",WT,WT,4.3,2,Arabidopsis
+"Luo et al., 2019,Experiment 1",nced overexpression,NCED3_n,1.9,1,Arabidopsis
+"Mashiguchi et al., 2022, Experiment 1",WT,WT,3.4,1,Arabidopsis
+"Mashiguchi et al., 2022, Experiment 1",clamt,CLAMT_n,9,2,Arabidopsis
+"Roesler et al., 2021, Experiment 1",WT,WT,5.7,1,Arabidopsis
+"Roesler et al., 2021, Experiment 1",cxe overexpression,CXE_n_OE,6.3,2,Arabidopsis
+"Roesler et al., 2021, Experiment 1",max1,MAX1_n,10,3,Arabidopsis
+"Roesler et al., 2021, Experiment 1",max2,MAX2_n,9,3,Arabidopsis
+"Salam et al., 2021, Experiment 1",WT,WT,0.3,1,Arabidopsis
+"Salam et al., 2021, Experiment 1",WT+suc,"WT, +SUC",0.7,2,Arabidopsis
+"Salam et al., 2021, Experiment 1",WT+ck,"WT, +CK",1.3,2,Arabidopsis
+"Salam et al., 2021, Experiment 1",WT+suc+ck,"WT, +SUC, +CK",1.7,,Arabidopsis
+"Soundappan et al., 2015, Experiment 1",WT,WT,1.3,1,Arabidopsis
+"Soundappan et al., 2015, Experiment 1",max2,MAX2_n,10,2,Arabidopsis
+"Soundappan et al., 2015, Experiment 1",smxl678max2,"SMXL6_7_8_n, MAX2_n",1.2,1,Arabidopsis
+"Stirnberg et al., 2007, Experiment 1",WT,WT,6,1,Arabidopsis
+"Stirnberg et al., 2007, Experiment 1",max1,MAX1_n,33,3,Arabidopsis
+"Stirnberg et al., 2007, Experiment 1",max3,MAX3_n,25.4,2,Arabidopsis
+"Stirnberg et al., 2007, Experiment 1",max4,MAX4_n,25.1,2,Arabidopsis
+"Stirnberg et al., 2007, Experiment 2",wt,WT,4,1,Arabidopsis
+"Stirnberg et al., 2007, Experiment 2",max2,MAX2_n,17,2,Arabidopsis
+"Stirnberg et al.,2002, Experiment 1",WT,WT,3,1,Arabidopsis
+"Stirnberg et al.,2002, Experiment 1",max1,MAX1_n,7.2,2,Arabidopsis
+"Stirnberg et al.,2002, Experiment 1",max2,MAX2_n,8.2,2,Arabidopsis
+"Stirnberg et al.,2002, Experiment 1",max1max2,"MAX2_n, MAX1_n",8.9,3,Arabidopsis
+"Tal et al., 2022, Experiment 1",WT,WT,4.7,1,Arabidopsis
+"Tal et al., 2022, Experiment 1",max2,MAX2_n,9,2,Arabidopsis
+"Tal et al., 2022, Experiment 1",d14,D14_n,9,2,Arabidopsis
+"Umehara et al., 2008, Experiment 1",WT,WT,0,1,Arabidopsis
+"Umehara et al., 2008, Experiment 1",max2,MAX2_n,5.5,2,Arabidopsis
+"Umehara et al., 2008, Experiment 1",max3 ,MAX3_n,5.1,2,Arabidopsis
+"Umehara et al., 2008, Experiment 1",max4,MAX4_n,5.6,2,Arabidopsis
+"Umehara et al., 2008, Experiment 1",WT+sl,"WT, +SL",0,1,Arabidopsis
+"Umehara et al., 2008, Experiment 1",max2+sl,"MAX2_n, +SL",5.5,2,Arabidopsis
+"Umehara et al., 2008, Experiment 1",max3+sl,"MAX3_n, +SL",0,1,Arabidopsis
+"Umehara et al., 2008, Experiment 1",max4+sl,"MAX4_n, +SL",0.5,1,Arabidopsis
+"Van Es et al., 2019, Experiment 1",WT,WT,4,1,Arabidopsis
+"Van Es et al., 2019, Experiment 1",brc1,BRC1_2_n,7.3,2,Arabidopsis
+"van Rongen et al., 2019, Experiment 1",WT,WT,5,2,Arabidopsis
+"van Rongen et al., 2019, Experiment 1",pin347,PIN_1_3_4_7_n,4,2,Arabidopsis
+"van Rongen et al., 2019, Experiment 1",max2,MAX2_n,7,4,Arabidopsis
+"van Rongen et al., 2019, Experiment 1",max2pin347,"PIN_1_3_4_7_n, MAX2_n",6,3,Arabidopsis
+"van Rongen et al., 2019, Experiment 1",max4,MAX4_n,7,4,Arabidopsis
+"van Rongen et al., 2019, Experiment 1",max4pin347,"PIN_1_3_4_7_n, MAX4_n",6.3,3,Arabidopsis
+"van Rongen et al., 2019, Experiment 1",WT+sl,"WT, +SL",2.4,1,Arabidopsis
+"van Rongen et al., 2019, Experiment 1",pin347+sl,"PIN_1_3_4_7_n, +SL",2.4,1,Arabidopsis
+"van Rongen et al., 2019, Experiment 1",max2+sl,"MAX2_n, +SL",7,4,Arabidopsis
+"van Rongen et al., 2019, Experiment 1",max2pin347+sl,"PIN_1_3_4_7_n, MAX2_n, +SL",5.4,3,Arabidopsis
+"van Rongen et al., 2019, Experiment 1",max4+sl,"MAX4_n, +SL",3.4,2,Arabidopsis
+"van Rongen et al., 2019, Experiment 1",max4pin347+sl,"PIN_1_3_4_7_n, MAX4_n, +SL",2.8,2,Arabidopsis
+"van Rongen et al., 2019, Experiment 2",wt,WT,3,2,Arabidopsis
+"van Rongen et al., 2019, Experiment 2",wt+sl,"WT, +SL",2,1,Arabidopsis
+"van Rongen et al., 2019, Experiment 2",pin347,PIN_1_3_4_7_n,3,2,Arabidopsis
+"van Rongen et al., 2019, Experiment 2",pin347+sl,"PIN_1_3_4_7_n, +SL",2,1,Arabidopsis
+"van Rongen et al., 2019, Experiment 2",brc12,BRC1_2_n,7,4,Arabidopsis
+"van Rongen et al., 2019, Experiment 2",brc12+sl,"BRC1_2_n, +SL",6,3,Arabidopsis
+"van Rongen et al., 2019, Experiment 2",brc12 pin347,"BRC1_2_n, PIN_1_3_4_7_n",7,4,Arabidopsis
+"van Rongen et al., 2019, Experiment 2",brc12 pin347+sl,"BRC1_2_n, PIN_1_3_4_7_n, +SL",5,3,Arabidopsis
+"van Rongen et al., 2019, Experiment 2",d14,D14_n,7.1,4,Arabidopsis
+"van Rongen et al., 2019, Experiment 2",d14+sl,"D14_n, +SL",7.1,4,Arabidopsis
+"Wang et al., 2015, Experiment 1",WT,WT,5,2,Arabidopsis
+"Wang et al., 2015, Experiment 1",smxl678,SMXL6_7_8_n,3.6,1,Arabidopsis
+"Wang et al., 2015, Experiment 1",max3,MAX3_n,10,3,Arabidopsis
+"Wang et al., 2015, Experiment 1",max3smxl678,"SMXL6_7_8_n, MAX3_n",4,1,Arabidopsis
+"Xie et al., 2020, Experiment 1",WT,WT,8,3,Arabidopsis
+"Xie et al., 2020, Experiment 1",WT+fr,"WT, +Low_R_FR",4,2,Arabidopsis
+"Xie et al., 2020, Experiment 1",fhy3far1,FHY3_FAR1_n,1,1,Arabidopsis
+"Xie et al., 2020, Experiment 1",fhy3far1+fr,"FHY3_FAR1_n, +Low_R_FR",1.6,1,Arabidopsis
+"Xie et al., 2020, Experiment 2",wt,WT,8.1,2,Arabidopsis
+"Xie et al., 2020, Experiment 2",smxl678,SMXL6_7_8_n,6.8,1,Arabidopsis
+"Xie et al., 2020, Experiment 2",spl915,SPL9_15_n,11,3,Arabidopsis
+"Xie et al., 2020, Experiment 2",smxl678 spl915,"SMXL6_7_8_n, SPL9_15",10.1,2,Arabidopsis
+"Xie et al., 2020, Experiment 3",wt,WT,8,2,Arabidopsis
+"Xie et al., 2020, Experiment 3",fhy3far1,FHY3_FAR1_n,1.6,1,Arabidopsis
+"Xie et al., 2020, Experiment 3",spl915,SPL9_15_n,12,3,Arabidopsis
+"Xie et al., 2020, Experiment 3",spl915fhy3far1,"SPL9_15_n, FHY3_FAR1_n",10.8,3,Arabidopsis
+"Xu et al., 2021, Experiment 1",WT,WT,6,1,Arabidopsis
+"Xu et al., 2021, Experiment 1",cxe overexpression,CXE_n,13,2,Arabidopsis
+"Xu et al., 2021, Experiment 1",cxe,CXE_n,6,1,Arabidopsis
+"Xu et al., 2021, Experiment 2",wt,,5.7,1,Arabidopsis
+"Xu et al., 2021, Experiment 2",max3,MAX3_n,14,2,Arabidopsis
+"Xu et al., 2021, Experiment 2",max4,MAX4_n,13,2,Arabidopsis
+"Xu et al., 2021, Experiment 2",max1,MAX1_n,13,2,Arabidopsis
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+"Nelson et al., 2011, Experiment 1",WT,WT,1,2,Arabidopsis
+"Nelson et al., 2011, Experiment 1",max3,MAX3_n,5.4,4,Arabidopsis
+"Nelson et al., 2011, Experiment 1",max4,MAX4_n,5.3,4,Arabidopsis
+"Nelson et al., 2011, Experiment 1",WT+sl,"WT, +SL",0.5,1,Arabidopsis
+"Nelson et al., 2011, Experiment 1",max3+sl,"MAX3_n, +SL",2.5,3,Arabidopsis
+"Nelson et al., 2011, Experiment 1",max4+sl,"MAX4_n, +SL",2,3,Arabidopsis
+,,,,,
+,,,,,
+"Brewer et al., 2009, Experiment 1",WT,WT,3,2,Arabidopsis
+"Brewer et al., 2009, Experiment 1",max3,MAX3_n,7.3,4,Arabidopsis
+"Brewer et al., 2009, Experiment 1",max4,MAX4_n,9.4,4,Arabidopsis
+"Brewer et al., 2009, Experiment 1",WT+sl,"WT, +SL",2,1,Arabidopsis
+"Brewer et al., 2009, Experiment 1",max3+sl,"MAX3_n, +SL",4.1,3,Arabidopsis
+"Brewer et al., 2009, Experiment 1",max4+sl,"MAX4_n, +SL",4,3,Arabidopsis
+"Brewer et al., 2009, Experiment 2",WT,WT,1.2,2,Arabidopsis
+"Brewer et al., 2009, Experiment 2",WT+sl,"WT, +SL",0.6,1,Arabidopsis
+"Brewer et al., 2009, Experiment 2",brc1,BRC1_2_n,2.8,3,Arabidopsis
+"Brewer et al., 2009, Experiment 2",brc1+sl,"BRC1_2_n, +SL",2.2,3,Arabidopsis

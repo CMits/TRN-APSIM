@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "method": "ODE_Hill",
+    "K": 0.5,
+    "n": 2,
+    "accuracy": 100.0,
+    "hill_activation_formula": "f(x) = x^2 * (0.5^2 + 1) / (0.5^2 + x^2)",
+    "hill_inhibition_formula": "g(x) = (0.5^2 + 1) / (0.5^2 + x^2)",
+    "ode_dynamics": "dx/dt = production - x; at steady state x = production",
+    "dt": 0.1,
+    "max_time": 50.0,
+    "convergence_tolerance": 0.0001,
+    "direction_threshold": 0.05
+  },
+  "equations": [
+    {
+      "node": "D27",
+      "activators": [],
+      "inhibitors": [],
+      "formula": "D27 = 1.0 * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "MAX3",
+      "activators": [
+        "D27"
+      ],
+      "inhibitors": [],
+      "formula": "MAX3 = prod(f(D27)) * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "MAX4",
+      "activators": [
+        "MAX3"
+      ],
+      "inhibitors": [],
+      "formula": "MAX4 = prod(f(MAX3)) * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "MAX1",
+      "activators": [
+        "MAX4"
+      ],
+      "inhibitors": [],
+      "formula": "MAX1 = prod(f(MAX4)) * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "CLAMT",
+      "activators": [
+        "MAX1"
+      ],
+      "inhibitors": [],
+      "formula": "CLAMT = prod(f(MAX1)) * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "LBO",
+      "activators": [
+        "CLAMT"
+      ],
+      "inhibitors": [],
+      "formula": "LBO = prod(f(CLAMT)) * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "CXE",
+      "activators": [],
+      "inhibitors": [],
+      "formula": "CXE = 1.0 * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "Strigolactone",
+      "activators": [
+        "MAX4",
+        "LBO"
+      ],
+      "inhibitors": [
+        "CXE"
+      ],
+      "formula": "Strigolactone = prod(f(MAX4, LBO)) * prod(g(CXE)) * gene_modifier + exogenous"
+    },
+    {
+      "node": "D14",
+      "activators": [
+        "Strigolactone"
+      ],
+      "inhibitors": [],
+      "formula": "D14 = prod(f(Strigolactone)) * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "MAX2",
+      "activators": [
+        "D14"
+      ],
+      "inhibitors": [],
+      "formula": "MAX2 = prod(f(D14)) * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "SMXL678",
+      "activators": [
+        "FHY3FAR1"
+      ],
+      "inhibitors": [
+        "D14",
+        "MAX2"
+      ],
+      "formula": "SMXL678 = prod(f(FHY3FAR1)) * prod(g(D14, MAX2)) * gene_modifier + exogenous"
+    },
+    {
+      "node": "SPL9_15",
+      "activators": [],
+      "inhibitors": [
+        "SMXL678",
+        "FHY3FAR1"
+      ],
+      "formula": "SPL9_15 = 1.0 * prod(g(SMXL678, FHY3FAR1)) * gene_modifier + exogenous"
+    },
+    {
+      "node": "PHYB",
+      "activators": [
+        "High_R_FR"
+      ],
+      "inhibitors": [
+        "Low_R_FR"
+      ],
+      "formula": "PHYB = prod(f(High_R_FR)) * prod(g(Low_R_FR)) * gene_modifier + exogenous"
+    },
+    {
+      "node": "PIFS",
+      "activators": [],
+      "inhibitors": [
+        "High_R_FR"
+      ],
+      "formula": "PIFS = 1.0 * prod(g(High_R_FR)) * gene_modifier + exogenous"
+    },
+    {
+      "node": "FHY3FAR1",
+      "activators": [
+        "High_R_FR"
+      ],
+      "inhibitors": [
+        "Low_R_FR"
+      ],
+      "formula": "FHY3FAR1 = prod(f(High_R_FR)) * prod(g(Low_R_FR)) * gene_modifier + exogenous"
+    },
+    {
+      "node": "BRC1",
+      "activators": [
+        "SPL9_15",
+        "PIFS"
+      ],
+      "inhibitors": [
+        "SMXL678",
+        "PHYB",
+        "Cytokinin",
+        "Sucrose"
+      ],
+      "formula": "BRC1 = prod(f(SPL9_15, PIFS)) * prod(g(SMXL678, PHYB, Cytokinin, Sucrose)) * gene_modifier + exogenous"
+    },
+    {
+      "node": "GT1",
+      "activators": [
+        "BRC1"
+      ],
+      "inhibitors": [],
+      "formula": "GT1 = prod(f(BRC1)) * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "NCED3",
+      "activators": [],
+      "inhibitors": [],
+      "formula": "NCED3 = 1.0 * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "ABA",
+      "activators": [
+        "NCED3"
+      ],
+      "inhibitors": [],
+      "formula": "ABA = prod(f(NCED3)) * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "PIN1",
+      "activators": [],
+      "inhibitors": [],
+      "formula": "PIN1 = 1.0 * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "Auxin_Shoot",
+      "activators": [],
+      "inhibitors": [
+        "Decapitation_Signal"
+      ],
+      "formula": "Auxin_Shoot = 1.0 * prod(g(Decapitation_Signal)) * gene_modifier + exogenous"
+    },
+    {
+      "node": "Auxin_Bud",
+      "activators": [
+        "PIN1",
+        "Cytokinin"
+      ],
+      "inhibitors": [
+        "Auxin_Shoot"
+      ],
+      "formula": "Auxin_Bud = prod(f(PIN1, Cytokinin)) * prod(g(Auxin_Shoot)) * gene_modifier + exogenous"
+    },
+    {
+      "node": "Cytokinin",
+      "activators": [],
+      "inhibitors": [],
+      "formula": "Cytokinin = 1.0 * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "Gibberellin",
+      "activators": [],
+      "inhibitors": [],
+      "formula": "Gibberellin = 1.0 * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "Sucrose",
+      "activators": [
+        "Decapitation_Signal"
+      ],
+      "inhibitors": [],
+      "formula": "Sucrose = prod(f(Decapitation_Signal)) * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "Decapitation_Signal",
+      "activators": [],
+      "inhibitors": [],
+      "formula": "Decapitation_Signal = 1.0 * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "High_R_FR",
+      "activators": [],
+      "inhibitors": [],
+      "formula": "High_R_FR = 1.0 * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "Low_R_FR",
+      "activators": [],
+      "inhibitors": [],
+      "formula": "Low_R_FR = 1.0 * 1.0 * gene_modifier + exogenous"
+    },
+    {
+      "node": "Bud_Release",
+      "activators": [
+        "Sucrose"
+      ],
+      "inhibitors": [
+        "BRC1",
+        "GT1",
+        "ABA"
+      ],
+      "formula": "Bud_Release = prod(f(Sucrose)) * prod(g(BRC1, GT1, ABA)) * gene_modifier + exogenous"
+    },
+    {
+      "node": "Tiller_Number",
+      "activators": [
+        "Auxin_Bud",
+        "Bud_Release"
+      ],
+      "inhibitors": [
+        "Gibberellin"
+      ],
+      "formula": "Tiller_Number = prod(f(Auxin_Bud, Bud_Release)) * prod(g(Gibberellin)) * gene_modifier + exogenous"
+    }
+  ]
+}

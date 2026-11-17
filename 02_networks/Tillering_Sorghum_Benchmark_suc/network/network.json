@@ -1,0 +1,571 @@
+{
+ "metadata": {
+  "flash_p_version": "1.1.0-4-g1b5bb08",
+  "build_variant": "debiasing",
+  "phenotype": "Tillering",
+  "phenotype_node": "Tiller_Number",
+  "species": "Sorghum bicolor",
+  "created": "2026-08-12",
+  "total_nodes": 30,
+  "total_edges": 44,
+  "source_nodes": 9,
+  "source_percentage": 30.0,
+  "judge_iteration_1_applied": "Step 2.5 JUDGE suggestions applied once (no loop). (1) MAX4->MAX1 (E043) restored with a full-text-verified DOI - see doi_repair_note. (2) FHY3FAR1->SMXL678 sole-activator risk documented - see modeling_risks. (3) ABA catabolism edge NOT added: no CYP707A/ABA-8'-hydroxylase edge exists in curated_edges.json and no DOI could be verified within Step 2 scope, so the ABA arm stays synthesis-only (NCED3->ABA). (4) quarantine notes below re-checked and still accurate for the 40-edge model. (5) Tiller_Number direct-edge count unchanged (3) - curated pool exhausted, no action per JUDGE.",
+  "doi_repair_note": "E043 MAX4->MAX1: Step 1.6 replaced the ORIGINAL DOI 10.1111/nph.17737 (Yoda et al. 2021, New Phytologist, 'Strigolactone biosynthesis catalyzed by cytochrome P450 and sulfotransferase in sorghum') with 10.2196/78163, an actigraphy paper matched on the literal string 'Max1-Max4'. That repair is a false positive: the abstract-level co-mention test failed only because the sorghum paper names the genes SbCCD8 and SbMAX1, not 'MAX4'/'MAX1'. The BUILDER restored the original DOI after checking the paper's open-access full text (PMC9292024), which states: 'When SbMAX1a and SbCPR1, an NADPH-P450 reductase that donates the electrons required for P450 activity, were co-expressed with SbD27, SbCCD7, and SbCCD8, CLA and 18-OH-CLA were then detected.' This is sorghum-native evidence that the SbCCD8 (MAX4) product carlactone is the substrate converted by SbMAX1, i.e. the MAX4->MAX1 pathway-flux edge. NOTE: data/evidence.json still carries the superseded 10.2196/78163 record for E043 (it preserves the correct DOI under 'previous_doi'); that file is script-owned and was NOT hand-edited here. WARNING: do not blindly re-run Step 1.6 on this network - verify_evidence.py matches entity names as literal strings, so it would fail the MAX4/MAX1 co-mention test on this sorghum paper again and re-replace the DOI with the same actigraphy false positive. E043's DOI must be preserved, or the verifier taught the SbCCD8=MAX4 / SbMAX1=MAX1 aliases first.",
+  "modeling_risks": "SMXL678 sole-activator risk (JUDGE suggestion 2): FHY3FAR1->SMXL678 (E041, edge N022) is SMXL678's ONLY activator, its evidence is Arabidopsis-only (10.1038/s41467-020-15893-7) on a Sorghum bicolor network, and it is Step 1.6 quarantined (v=q). Canonical SMXL6/7/8 (D53) biology is constitutive transcription with proteasomal turnover through the D14-MAX2 perception gate, NOT transcriptional activation by FHY3/FAR1, so any fhy3/far1 perturbation drives SMXL678 toward the activator floor in a way the literature does not clearly support - and, because SMXL678 has a single activator, that collapse is undamped by geometric-mean averaging. The edge is RETAINED because it is the only curated link that carries the light-quality (R:FR) signal into the SL-repressor layer and removing it would orphan the FHY3FAR1 arm; treat fhy3/far1 predictions and any SMXL678-level predictions under light perturbation as low-confidence. A sorghum-specific baseline SMXL6/7/8 transcriptional regulator would be the correct fix and belongs to a future Step 1/1.5 search. Secondary risk: 18 of 40 in-network edges are quarantined, concentrated in the light module and the decapitation/auxin arm (see evidence_note).",
+  "evidence_note": "Step 1.6 grounded 22/43 curated edges (plus E043, restored by the BUILDER on full-text evidence - see doi_repair_note). 18 edges kept in the model carry the Step 1.6 quarantine flag (v=q) in data/curated_edges.json and are retained ONLY because the cascade needs them (light arm, decapitation/auxin arm, Bud_Release->Tiller_Number process link, SL/GT1 links): E015 LBO->Strigolactone; E025 SMXL678->SPL9_15; E001 High_R_FR->PHYB; E002 Low_R_FR->PHYB; E012 High_R_FR->PIFS; E040 High_R_FR->FHY3FAR1; E039 Low_R_FR->FHY3FAR1; E041 FHY3FAR1->SMXL678; E042 FHY3FAR1->SPL9_15; E006 Decapitation_Signal->Auxin_Shoot; E005 Decapitation_Signal->Sucrose; E007 Auxin_Shoot->Auxin_Bud; E008 PIN1->Auxin_Bud; E010 Cytokinin->Auxin_Bud; E009 Auxin_Bud->Tiller_Number; E031 BRC1->GT1; E032 GT1->Bud_Release; E036 Bud_Release->Tiller_Number",
+  "excluded_curated_edges": "E004: PHYB-|MAX2: quarantined, redundant with PHYB-|BRC1, and would inject light into the SL perception gate on a weakly supported sign.; E020: GT1->NCED3: quarantined with two concrete gene endpoints; Step 1.5 judge flagged it as an unclosable literature gap. NCED3 kept as a source; ABA arm unaffected.; E035: MAX2-|Bud_Release: quarantined shortcut duplicating MAX2-|SMXL678-|BRC1-|Bud_Release; bypasses the perception gate without adding cascade structure.",
+  "local_extension": {
+   "applied_by": "FlashP_APSIM_Reproduction/scripts/extend_sucrose.py",
+   "reason": "FlashP wired sucrose with 2 outgoing edges; the hand-curated PSoup benchmark has 5. Added the missing sucrose->SL-signalling and sucrose->cytokinin arms, each with a literature DOI.",
+   "edges_added": [
+    {
+     "s": "Sucrose",
+     "t": "MAX2",
+     "d": "10.1111/nph.17834",
+     "species": "Oryza sativa",
+     "title": "Sucrose promotes D53 accumulation and tillering in rice",
+     "authors": "Patil SB, Barbier FF, Zhao J, et al.",
+     "year": 2022,
+     "journal": "New Phytologist 234:122-136",
+     "evidence": "Sucrose inhibits the gene expression of D3, the orthologue of the Arabidopsis F-box MAX2 required for SL signalling.",
+     "note": "Grass-direct. D3 is the rice/sorghum orthologue of MAX2 (= SbMAX2).",
+     "sign": -1
+    },
+    {
+     "s": "Sucrose",
+     "t": "SMXL678",
+     "d": "10.1111/nph.17834",
+     "species": "Oryza sativa",
+     "title": "Sucrose promotes D53 accumulation and tillering in rice",
+     "authors": "Patil SB, Barbier FF, Zhao J, et al.",
+     "year": 2022,
+     "journal": "New Phytologist 234:122-136",
+     "evidence": "sucrose antagonizes the suppressive action of SL on tillering in rice and on the degradation of D53, a major target of SL signalling.",
+     "note": "Sucrose stabilises D53/SMXL6,7,8 by opposing SL-driven degradation. Grass-direct, same study.",
+     "sign": 1
+    },
+    {
+     "s": "Sucrose",
+     "t": "Tiller_Number",
+     "d": "10.1111/pce.12500",
+     "species": "Sorghum bicolor",
+     "title": "Photosynthetic leaf area modulates tiller bud outgrowth in sorghum",
+     "authors": "Kebrom TH, Mullet JE",
+     "year": 2015,
+     "journal": "Plant, Cell & Environment 38(8):1471-1478",
+     "evidence": "The SWEET transporter may facilitate sucrose unloading from the phloem to the apoplast where cell wall invertases generate monosaccharides for uptake and utilization to sustain bud outgrowth.",
+     "note": "SORGHUM-DIRECT - the strongest species grounding available. Represents the direct metabolic-supply role of sucrose in SUSTAINING outgrowth, which the hand-curated model encodes by putting SUC inside the phenotype formula: Sustained_growth = ((SUC + min(GA,PAT_Bud))/2) * Bud_release. This is the single largest missing contributor to sucrose response amplitude.",
+     "sign": 1
+    },
+    {
+     "s": "Sucrose",
+     "t": "Cytokinin",
+     "d": "10.1093/plphys/kiab003",
+     "species": "Solanum tuberosum / Pisum sativum",
+     "title": "Sucrose promotes stem branching through cytokinin",
+     "authors": "Salam BB, Barbier F, Danieli R, et al.",
+     "year": 2021,
+     "journal": "Plant Physiology 185(4):1708-1721",
+     "evidence": "Sucrose feeding to detached stems promotes the accumulation of cytokinin (CK), as well as the expression of vacuolar invertase (VInv).",
+     "note": "NOT grass-direct - dicot evidence. Flagged. Included because it also converts Cytokinin from an unregulated source node into a regulated one, activating the otherwise inert CK arm (Cytokinin -| BRC1, -> Auxin_Bud).",
+     "sign": 1
+    }
+   ],
+   "also": "Cytokinin changed from source to regulated node.",
+   "note": "FlashP_Repo is unmodified; this extension lives only in this project."
+  }
+ },
+ "nodes": [
+  {
+   "id": "D27",
+   "ty": "G",
+   "fn": "DWARF27 (beta-carotene isomerase)",
+   "src": true
+  },
+  {
+   "id": "MAX3",
+   "ty": "G",
+   "fn": "MORE AXILLARY GROWTH3 / CCD7",
+   "src": false
+  },
+  {
+   "id": "MAX4",
+   "ty": "G",
+   "fn": "MORE AXILLARY GROWTH4 / CCD8",
+   "src": false
+  },
+  {
+   "id": "MAX1",
+   "ty": "G",
+   "fn": "MORE AXILLARY GROWTH1 (CYP711A carlactone oxidase)",
+   "src": false
+  },
+  {
+   "id": "CLAMT",
+   "ty": "G",
+   "fn": "Carlactonoic acid methyltransferase",
+   "src": false
+  },
+  {
+   "id": "LBO",
+   "ty": "G",
+   "fn": "LATERAL BRANCHING OXIDOREDUCTASE",
+   "src": false
+  },
+  {
+   "id": "CXE",
+   "ty": "G",
+   "fn": "Carboxylesterase strigolactone hydrolase (CXE15/CXE20 clade)",
+   "src": true
+  },
+  {
+   "id": "Strigolactone",
+   "ty": "H",
+   "fn": "Strigolactone",
+   "src": false
+  },
+  {
+   "id": "D14",
+   "ty": "G",
+   "fn": "DWARF14 (alpha/beta-hydrolase SL receptor)",
+   "src": false
+  },
+  {
+   "id": "MAX2",
+   "ty": "G",
+   "fn": "MORE AXILLARY GROWTH2 / D3 F-box",
+   "src": false
+  },
+  {
+   "id": "SMXL678",
+   "ty": "PC",
+   "fn": "SMXL6/7/8 (D53-type) SL-signalling repressor clade",
+   "src": false
+  },
+  {
+   "id": "SPL9_15",
+   "ty": "G",
+   "fn": "SQUAMOSA PROMOTER BINDING PROTEIN-LIKE 9/15 (IPA1-type)",
+   "src": false
+  },
+  {
+   "id": "PHYB",
+   "ty": "G",
+   "fn": "PHYTOCHROME B",
+   "src": false
+  },
+  {
+   "id": "PIFS",
+   "ty": "G",
+   "fn": "PHYTOCHROME-INTERACTING FACTORS (PIF4/5/7 clade)",
+   "src": false
+  },
+  {
+   "id": "FHY3FAR1",
+   "ty": "G",
+   "fn": "FAR-RED ELONGATED HYPOCOTYL3 / FAR-RED IMPAIRED RESPONSE1",
+   "src": false
+  },
+  {
+   "id": "BRC1",
+   "ty": "G",
+   "fn": "BRANCHED1 / TEOSINTE BRANCHED1 (SbTB1)",
+   "src": false
+  },
+  {
+   "id": "GT1",
+   "ty": "G",
+   "fn": "GRASSY TILLERS1 (HD-ZIP I)",
+   "src": false
+  },
+  {
+   "id": "NCED3",
+   "ty": "G",
+   "fn": "9-cis-epoxycarotenoid dioxygenase 3",
+   "src": true
+  },
+  {
+   "id": "ABA",
+   "ty": "H",
+   "fn": "Abscisic acid",
+   "src": false
+  },
+  {
+   "id": "PIN1",
+   "ty": "G",
+   "fn": "PIN-FORMED1 auxin efflux carrier",
+   "src": true
+  },
+  {
+   "id": "Auxin_Shoot",
+   "ty": "H",
+   "fn": "Shoot-apex-derived auxin",
+   "src": false
+  },
+  {
+   "id": "Auxin_Bud",
+   "ty": "H",
+   "fn": "Axillary bud auxin export",
+   "src": false
+  },
+  {
+   "id": "Cytokinin",
+   "ty": "H",
+   "fn": "Cytokinin",
+   "src": false
+  },
+  {
+   "id": "Gibberellin",
+   "ty": "H",
+   "fn": "Gibberellin",
+   "src": true
+  },
+  {
+   "id": "Sucrose",
+   "ty": "M",
+   "fn": "Sucrose",
+   "src": false
+  },
+  {
+   "id": "Decapitation_Signal",
+   "ty": "E",
+   "fn": "Decapitation / apex removal",
+   "src": true
+  },
+  {
+   "id": "High_R_FR",
+   "ty": "E",
+   "fn": "High red:far-red ratio (low density / open canopy)",
+   "src": true
+  },
+  {
+   "id": "Low_R_FR",
+   "ty": "E",
+   "fn": "Low red:far-red ratio (shade / high density)",
+   "src": true
+  },
+  {
+   "id": "Bud_Release",
+   "ty": "PR",
+   "fn": "Axillary bud release from dormancy",
+   "src": false
+  },
+  {
+   "id": "Tiller_Number",
+   "ty": "P",
+   "fn": "Tiller number",
+   "src": false
+  }
+ ],
+ "edges": [
+  {
+   "s": "D27",
+   "t": "MAX3",
+   "x": 1,
+   "eid": "N001",
+   "d": "10.3390/plants11192604"
+  },
+  {
+   "s": "MAX3",
+   "t": "MAX4",
+   "x": 1,
+   "eid": "N002",
+   "d": "10.3389/fpls.2022.1081740"
+  },
+  {
+   "s": "MAX4",
+   "t": "Strigolactone",
+   "x": 1,
+   "eid": "N003",
+   "d": "10.3389/fpls.2024.1456627"
+  },
+  {
+   "s": "MAX4",
+   "t": "MAX1",
+   "x": 1,
+   "eid": "N040",
+   "d": "10.1111/nph.17737"
+  },
+  {
+   "s": "MAX1",
+   "t": "CLAMT",
+   "x": 1,
+   "eid": "N004",
+   "d": "10.1093/pcp/pcad088"
+  },
+  {
+   "s": "CLAMT",
+   "t": "LBO",
+   "x": 1,
+   "eid": "N005",
+   "d": "10.1093/pcp/pcad060"
+  },
+  {
+   "s": "LBO",
+   "t": "Strigolactone",
+   "x": 1,
+   "eid": "N006",
+   "d": "10.1093/pcp/pcad060"
+  },
+  {
+   "s": "CXE",
+   "t": "Strigolactone",
+   "x": -1,
+   "eid": "N007",
+   "d": "10.1093/plcell/koaf241"
+  },
+  {
+   "s": "Strigolactone",
+   "t": "D14",
+   "x": 1,
+   "eid": "N008",
+   "d": "10.1002/ps.5456"
+  },
+  {
+   "s": "D14",
+   "t": "MAX2",
+   "x": 1,
+   "eid": "N009",
+   "d": "10.1038/nature12878"
+  },
+  {
+   "s": "D14",
+   "t": "SMXL678",
+   "x": -1,
+   "eid": "N010",
+   "d": "10.1371/journal.pbio.3003395"
+  },
+  {
+   "s": "MAX2",
+   "t": "SMXL678",
+   "x": -1,
+   "eid": "N011",
+   "d": "10.1371/journal.pbio.3003395"
+  },
+  {
+   "s": "SMXL678",
+   "t": "BRC1",
+   "x": -1,
+   "eid": "N012",
+   "d": "10.1371/journal.pbio.3003395"
+  },
+  {
+   "s": "SMXL678",
+   "t": "SPL9_15",
+   "x": -1,
+   "eid": "N013",
+   "d": "10.1038/cr.2017.102"
+  },
+  {
+   "s": "SPL9_15",
+   "t": "BRC1",
+   "x": 1,
+   "eid": "N014",
+   "d": "10.1093/hr/uhaf250"
+  },
+  {
+   "s": "High_R_FR",
+   "t": "PHYB",
+   "x": 1,
+   "eid": "N015",
+   "d": "10.1111/j.1365-3040.2009.02050.x"
+  },
+  {
+   "s": "Low_R_FR",
+   "t": "PHYB",
+   "x": -1,
+   "eid": "N016",
+   "d": "10.1104/pp.105.074856"
+  },
+  {
+   "s": "PHYB",
+   "t": "BRC1",
+   "x": -1,
+   "eid": "N017",
+   "d": "10.1111/nph.19485"
+  },
+  {
+   "s": "High_R_FR",
+   "t": "PIFS",
+   "x": -1,
+   "eid": "N018",
+   "d": "10.1111/nph.17872"
+  },
+  {
+   "s": "PIFS",
+   "t": "BRC1",
+   "x": 1,
+   "eid": "N019",
+   "d": "10.1093/jxb/erw479"
+  },
+  {
+   "s": "High_R_FR",
+   "t": "FHY3FAR1",
+   "x": 1,
+   "eid": "N020",
+   "d": "10.1038/s41467-020-15893-7"
+  },
+  {
+   "s": "Low_R_FR",
+   "t": "FHY3FAR1",
+   "x": -1,
+   "eid": "N021",
+   "d": "10.1038/s41467-020-15893-7"
+  },
+  {
+   "s": "FHY3FAR1",
+   "t": "SMXL678",
+   "x": 1,
+   "eid": "N022",
+   "d": "10.1038/s41467-020-15893-7"
+  },
+  {
+   "s": "FHY3FAR1",
+   "t": "SPL9_15",
+   "x": -1,
+   "eid": "N023",
+   "d": "10.1038/s41467-020-15893-7"
+  },
+  {
+   "s": "Decapitation_Signal",
+   "t": "Auxin_Shoot",
+   "x": -1,
+   "eid": "N024",
+   "d": "10.1111/pce.12500"
+  },
+  {
+   "s": "Decapitation_Signal",
+   "t": "Sucrose",
+   "x": 1,
+   "eid": "N025",
+   "d": "10.1111/pce.12500"
+  },
+  {
+   "s": "Auxin_Shoot",
+   "t": "Auxin_Bud",
+   "x": -1,
+   "eid": "N026",
+   "d": "10.1093/jxb/erag062"
+  },
+  {
+   "s": "PIN1",
+   "t": "Auxin_Bud",
+   "x": 1,
+   "eid": "N027",
+   "d": "10.1038/srep35955"
+  },
+  {
+   "s": "Cytokinin",
+   "t": "Auxin_Bud",
+   "x": 1,
+   "eid": "N028",
+   "d": "10.3389/fpls.2022.837136"
+  },
+  {
+   "s": "Auxin_Bud",
+   "t": "Tiller_Number",
+   "x": 1,
+   "eid": "N029",
+   "d": "10.3390/plants15101445"
+  },
+  {
+   "s": "Cytokinin",
+   "t": "BRC1",
+   "x": -1,
+   "eid": "N030",
+   "d": "10.3390/plants15121795"
+  },
+  {
+   "s": "Sucrose",
+   "t": "BRC1",
+   "x": -1,
+   "eid": "N031",
+   "d": "10.3390/plants15121795"
+  },
+  {
+   "s": "Sucrose",
+   "t": "Bud_Release",
+   "x": 1,
+   "eid": "N032",
+   "d": "10.3390/plants15091379"
+  },
+  {
+   "s": "BRC1",
+   "t": "Bud_Release",
+   "x": -1,
+   "eid": "N033",
+   "d": "10.3390/plants14030486"
+  },
+  {
+   "s": "BRC1",
+   "t": "GT1",
+   "x": 1,
+   "eid": "N034",
+   "d": "10.3389/fpls.2022.1048656"
+  },
+  {
+   "s": "GT1",
+   "t": "Bud_Release",
+   "x": -1,
+   "eid": "N035",
+   "d": "10.1104/pp.19.00717"
+  },
+  {
+   "s": "NCED3",
+   "t": "ABA",
+   "x": 1,
+   "eid": "N036",
+   "d": "10.3390/plants14050813"
+  },
+  {
+   "s": "ABA",
+   "t": "Bud_Release",
+   "x": -1,
+   "eid": "N037",
+   "d": "10.1111/pce.70668"
+  },
+  {
+   "s": "Bud_Release",
+   "t": "Tiller_Number",
+   "x": 1,
+   "eid": "N038",
+   "d": "10.3389/fpls.2025.1532180"
+  },
+  {
+   "s": "Gibberellin",
+   "t": "Tiller_Number",
+   "x": -1,
+   "eid": "N039",
+   "d": "10.1038/s41467-019-10667-2"
+  },
+  {
+   "s": "Sucrose",
+   "t": "MAX2",
+   "x": -1,
+   "eid": "N041",
+   "d": "10.1111/nph.17834"
+  },
+  {
+   "s": "Sucrose",
+   "t": "SMXL678",
+   "x": 1,
+   "eid": "N042",
+   "d": "10.1111/nph.17834"
+  },
+  {
+   "s": "Sucrose",
+   "t": "Tiller_Number",
+   "x": 1,
+   "eid": "N043",
+   "d": "10.1111/pce.12500"
+  },
+  {
+   "s": "Sucrose",
+   "t": "Cytokinin",
+   "x": 1,
+   "eid": "N044",
+   "d": "10.1093/plphys/kiab003"
+  }
+ ]
+}

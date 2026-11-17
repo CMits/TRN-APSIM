@@ -1,0 +1,32 @@
+{
+  "metadata": {"phenotype": "Tillering", "iteration": 1},
+  "verdict": "iterate",
+  "suggestions": [
+    {
+      "type": "literature_gap",
+      "priority": "medium",
+      "description": "MAX4->MAX1 (CCD8 carlactone output feeding the MAX1/CYP711A substrate) has no usable citation: E043's DOI (10.2196/78163) is a false-positive string-match to an actigraphy paper. MAX1 is therefore modelled as an orphaned source rather than downstream of MAX3/MAX4, so the model cannot capture max4-max1 epistasis or additive double-mutant over-branching that the canonical pathway predicts. Step 1 should re-search for a valid sorghum/maize/rice MAX4->MAX1 (or CCD8->CYP711A) citation to replace E043."
+    },
+    {
+      "type": "mechanism_improvement",
+      "priority": "medium",
+      "target_edge": {"s": "FHY3FAR1", "t": "SMXL678", "eid": "N022"},
+      "proposed_mechanism": "Flag explicitly in the mechanism/evidence_note that FHY3FAR1->SMXL678 (E041) is SMXL678's ONLY activator and its evidence is Arabidopsis-only and Step-1.6-quarantined (v=q). SMXL678/D53 biology is predominantly constitutive transcription with proteasomal turnover via D14-MAX2, not transcriptional activation by FHY3FAR1 — so any fhy3/far1 perturbation currently floors SMXL678 in a way the literature doesn't clearly support. Either document this as a known modeling risk, or have Step 1 search for a sorghum-specific baseline SMXL6/7/8 transcriptional regulator to avoid a sole-activator collapse on this node."
+    },
+    {
+      "type": "literature_gap",
+      "priority": "low",
+      "description": "ABA arm has synthesis only (NCED3->ABA); no curated catabolism edge (e.g., CYP707A-type ABA 8'-hydroxylase) exists to give ABA a degradation/turnover arm per Motif 4. Acceptable given benchmark scope, but a cereal ABA-catabolism citation would round out the arm if desired."
+    },
+    {
+      "type": "literature_gap",
+      "priority": "low",
+      "description": "18 of 39 in-network edges carry the Step 1.6 quarantine flag (v=q), concentrated in the light-quality module (FHY3FAR1, PHYB/PIFS) and the decapitation/auxin arm, and node_annotations.json notes the FHY3FAR1 arm is 'Arabidopsis-only evidence' on a Sorghum bicolor network. Already transparently documented in network metadata and retained because the cascade needs them (no topology change needed), but a targeted Step 1/1.5 search for sorghum- or maize-specific citations on these arms would raise evidence quality without touching structure."
+    },
+    {
+      "type": "literature_gap",
+      "priority": "low",
+      "description": "Tiller_Number (phenotype node) has only 3 direct curated edges (Auxin_Bud+ E009, Bud_Release+ E036, Gibberellin- E037), all already in the network — curated pool for this node is exhausted. Only 2 direct activators, below the rubric's 3-5 target, and no direct Strigolactone/Sucrose/light effector class reaches the phenotype node directly (all route through Bud_Release). Likely acceptable given the benchmark-matching scope, but Step 1 could search for one more direct phenotype-level citation (e.g., SL or sucrose correlated with tiller count) if broader phenotype coverage is wanted."
+    }
+  ]
+}

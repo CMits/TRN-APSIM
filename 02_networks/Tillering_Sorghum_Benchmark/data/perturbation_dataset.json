@@ -1,0 +1,32 @@
+#meta {"metadata": {"flash_p_version": "1.1.0-4-g1b5bb08", "build_variant": "debiasing", "phenotype": "Tillering", "species": "Sorghum bicolor", "created": "2026-08-12", "total_perturbations": null}}
+perturbations[30]{id,g,pt,ed,sp,d,v}:
+T001	D14	knockout	up	Oryza sativa	10.3390/ijms251910778	
+T002	MAX2	knockout	up	Oryza sativa	10.1038/nature12878	q
+T003	SMXL678	gain_of_function	up	Oryza sativa	10.3390/ijms251910778	q
+T004	SMXL678	loss_of_function	dn	Oryza sativa	10.3390/ijms251910778	q
+T005	MAX4	knockout	up	Oryza sativa	10.7717/peerj.14669	
+T006	MAX3	knockout	up	Oryza sativa	10.1111/j.1365-313x.2006.02916.x	
+T007	D27	knockout	up	Oryza sativa	10.1093/g3journal/jkae147	
+T008	BRC1	loss_of_function	up	Oryza sativa	10.1111/pbi.70180	
+T009	BRC1	overexpression	dn	Oryza sativa	10.1111/pbi.70180	
+T010	SPL9_15	gain_of_function	dn	Oryza sativa	10.1038/ng.591	q
+T011	PHYB	loss_of_function	dn	Sorghum bicolor	10.3390/plants15101445	
+T012	MAX1	loss_of_function	up	Arabidopsis thaliana	10.1038/s41467-023-38670-8	
+T013	CLAMT	loss_of_function	up	Arabidopsis thaliana	10.1093/jxb/eraf285	
+T014	CXE	overexpression	up	Arabidopsis thaliana	10.1038/s41477-021-01011-y	q
+T015	LBO	loss_of_function	up	Arabidopsis thaliana	10.1093/pcp/pcad088	
+T016	FHY3FAR1	loss_of_function	dn	Arabidopsis thaliana	10.1038/s41467-020-15893-7	q
+T017	PIFS	loss_of_function	up	Oryza sativa	10.1111/nph.17872	q
+T018	PIFS	overexpression	dn	Oryza sativa	10.1111/nph.17872	q
+T019	GT1	loss_of_function	up	Oryza sativa	10.1104/pp.19.00717	q
+T020	NCED3	knockdown	up	Oryza sativa	10.1038/s41467-025-62654-5	
+T021	PIN1	knockout	dn	Oryza sativa	10.1186/s12870-021-03217-w	
+T022	MAX2	loss_of_function	up	Sorghum bicolor	10.3389/fpls.2026.1757792	
+T023	MAX2	defoliation_induced	up	Sorghum bicolor	10.3389/fpls.2026.1757792	
+T024	Sucrose	treatment_high	up	Arabidopsis thaliana	10.3390/ijms231911580	
+T025	Cytokinin	treatment_high	up	Oryza sativa	10.3389/fpls.2022.837136	
+T026	Strigolactone	treatment_high	dn	Oryza sativa	10.1111/tpj.70124	
+T027	ABA	treatment_high	dn	Oryza sativa	10.1111/tpj.14266	
+T028	CXE	overexpression	up	Zea mays	10.3389/fpls.2021.639401	q
+T029	Gibberellin	treatment_high	dn	Oryza sativa	10.1038/s41467-019-10667-2	
+T030	Decapitation_Signal	decapitation	up	Oryza sativa	10.3390/plants13010091	q

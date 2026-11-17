@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "flash_p_version": "1.1.0-4-g1b5bb08",
+    "phenotype": "Tillering",
+    "species": "Sorghum bicolor",
+    "created": "2026-08-12"
+  },
+  "tests": {
+    "total": 30,
+    "tested": 30,
+    "skipped": 0
+  },
+  "algebraic": {
+    "accuracy": 1.0,
+    "correct": 30,
+    "total_tested": 30,
+    "kappa": 1.0,
+    "mcc": 1.0,
+    "convergence_rate": 1.0,
+    "failures": [],
+    "ci_95": [1.0, 1.0]
+  },
+  "ode": {
+    "accuracy": 1.0,
+    "correct": 30,
+    "total_tested": 30,
+    "kappa": 1.0,
+    "mcc": 1.0,
+    "convergence_rate": 1.0,
+    "failures": [],
+    "ci_95": [1.0, 1.0],
+    "best_K": 0.5,
+    "best_n": 2
+  },
+  "rwr": {
+    "accuracy": 1.0,
+    "correct": 30,
+    "total_tested": 30,
+    "kappa": 1.0,
+    "mcc": 1.0,
+    "convergence_rate": 1.0,
+    "failures": [],
+    "ci_95": [1.0, 1.0],
+    "best_alpha": 0.5
+  }
+}

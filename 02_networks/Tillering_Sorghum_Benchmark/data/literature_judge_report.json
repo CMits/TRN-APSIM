@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "flash_p_version": "1.1.0-4-g1b5bb08",
+    "build_variant": "debiasing",
+    "phenotype": "Tillering",
+    "phenotype_node": "Tiller_Number",
+    "species": "Sorghum bicolor",
+    "created": "2026-08-12",
+    "step_1_snapshot_location": "data/_step1_snapshot/",
+    "audit_scope_note": "Benchmark-matched network (Arabidopsis PSoup ortholog crosswalk via networks/Tillering_Sorghum_Benchmark/data/ortholog_crosswalk.json). Gap audit prioritized around the crosswalk's own 18-gene set, not the broader rice tillering gene set covered by the sister network networks/Tillering_Sorghum (MOC1/MOC3/LAX1/LAX2/FON1/DEP1/SD1/NGR5/OsMADS23/OsBZR1 intentionally out of scope here)."
+  },
+  "residual_gaps_for_builder": [
+    {"description": "GT1->NCED3 (E020) rests on DOI 10.1007/s12374-021-09310-9 (Song et al., OsGT1/HOX12 downstream of FC1), which was already tried and quarantined for this exact claim in the sister Tillering_Sorghum network (evidence.json: 'no paper found within budget that co-mentions GT1 and NCED1'). Targeted WebSearch in this pass found no dedicated GT1-ABA/NCED mechanistic paper in rice or sorghum. BUILDER/Step 1.6 should expect this edge to quarantine again; treat GT1->NCED3 as a literature_gap-flavoured link (biologically plausible ABA crosstalk downstream of the BRC1/GT1 axis, but not yet directly evidenced) unless Step 1.6 finds a co-mention."},
+    {"description": "FHY3FAR1 (E039-E042, T016) remains Arabidopsis-only evidence (10.1038/s41467-020-15893-7). Targeted search for a rice/sorghum/maize-specific FHY3/FAR1-tillering or FHY3/FAR1-strigolactone paper found none accessible this pass (maize FHY3/FAR1 literature is drought-context only, not branching). Crosswalk correctly keeps this flagged 'unconfirmed' - unclosable with current search budget."},
+    {"description": "CLAMT crosswalk gap only partially closed: Os4OCLAMT (Kayoumu et al. 2024, Science Advances, 10.1126/sciadv.adq3942) is a real named rice CLAMT-class enzyme, but it acts on the noncanonical 4-oxo-CLA branch, not the canonical CLA branch the network's MAX1->CLAMT->LBO edges model, and its mutant (oscyp706c2) shows no tillering phenotype. Documented in ortholog_crosswalk.json only; no curated_edges/perturbation_dataset entry was added on this DOI since it would not directly support the existing E013/E014 claims. MAX1->CLAMT (E013) and CLAMT->LBO (E014) remain on their original DOIs (Yoda 2021 sorghum-direct for MAX1, Arabidopsis pcp.pcad060 for CLAMT->LBO respectively)."}
+  ],
+  "added_summary": {
+    "papers": 0,
+    "edges": 1,
+    "tests": 3,
+    "edges_added": ["E043 (MAX4->MAX1, sign +1, DOI 10.1111/nph.17737 - Yoda et al. 2021 New Phytologist, sorghum-direct: SbMAX1a-d act on carlactone produced by the D27->CCD7(MAX3)->CCD8(MAX4) branch; closes the previously-orphaned MAX1 in-degree=0 gap by linking two genes already in the node set)"],
+    "tests_added": [
+      "T028 (CXE overexpression, up, Zea mays, DOI 10.3389/fpls.2021.639401 - Roesler et al. 2021 Frontiers: ectopic AtCXE20 in maize increases branches/tillers; gives the CXE node its first grass-species functional test, previously Arabidopsis-only via T014)",
+      "T029 (Gibberellin treatment_high, dn, Oryza sativa, DOI 10.1038/s41467-019-10667-2 - same verified DOI already grounding E037; closes missing-treatment-test gap for the GA hormone node, consistent with the existing Gibberellin->Tiller_Number(-1) edge)",
+      "T030 (Decapitation_Signal / decapitation, up, Oryza sativa, DOI 10.3390/plants13010091 - Chen et al. 2024 Plants MDPI, rice decapitation-vs-strigolactone proteomics study; closes missing canonical-decapitation-mutant gap for a PSoup-benchmark-central perturbation type that had no direct test despite Decapitation_Signal having 2 downstream edges)"
+    ],
+    "crosswalk_updates": ["CLAMT (unconfirmed -> Os4OCLAMT, Oryza sativa, medium confidence, documentation-only)", "CXE (unconfirmed -> AtCXE20 ectopic in Zea mays, medium confidence, closed via T028)"]
+  }
+}

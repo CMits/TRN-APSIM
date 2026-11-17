@@ -1,0 +1,73 @@
+{
+  "_comment": [
+    "Single source of truth for the pipeline's arms. Read by scripts/arms.py (Python)",
+    "and directly by run_all.ps1 (ConvertFrom-Json), so the arm list is never written twice.",
+    "",
+    "Paths are relative to the project root.",
+    "",
+    "Legacy arms keep their legacy output filenames (flashp_sucrose_response.csv,",
+    "solver_comparison.*) so the pre-refactor outputs stay a byte-exact regression",
+    "baseline. New arms get <arm>-suffixed names.",
+    "",
+    "kind:           r_psoup = swept by run_psoup_sweep.R; python_flashp = by run_sucrose_sweep.py",
+    "base_network_dir: the PRISTINE FlashP export extend_sucrose.py copies FROM. null for arms",
+    "                that are not sucrose-extended. The extension never edits in place, so the",
+    "                base export stays exactly as FlashP built it and network_dir is the copy.",
+    "network_dir:    the network this arm represents",
+    "equations:      the algebraic equations build_apsim_parameters.py derives APSIM params from",
+    "sweep_network_dir: the network run_sucrose_sweep.py / compare_solvers.py sweep.",
+    "                NOTE for flashp_suc this is the BASE benchmark while `equations` is _suc.",
+    "                That divergence is pre-existing behaviour (run_sucrose_sweep.py:36 vs",
+    "                build_apsim_parameters.py:170), surfaced here rather than introduced.",
+    "gene_map:       variant key into gene_map.VARIANTS",
+    "audit_key:      ortholog-map convention key used by audit_gene_coverage.py",
+    "extend_sucrose: whether extend_sucrose.py generates this arm's network",
+    "color:          Okabe-Ito, matching the palette in combined_figure_05.py",
+    "",
+    "label:          short display name. Both FlashP arms are simply \"Flash-P\" -- the",
+    "                node/edge counts printed beside the label are what tell them apart.",
+    "                Those counts are NOT stored here: arms.py counts them from the",
+    "                network_dir itself, so a label can never drift from its topology."
+  ],
+
+  "reference": "hand_curated",
+
+  "arms": [
+    {
+      "name": "hand_curated",
+      "label": "Hand-curated",
+      "kind": "r_psoup",
+      "base_network_dir": null,
+      "network_dir": "02_networks/Hand_Curated",
+      "equations": null,
+      "sweep_network_dir": null,
+      "response_csv": "01_audit/handcurated_sucrose_response.csv",
+      "pattern_column": "A_canonical",
+      "solver_out_stem": null,
+      "phenotype": "Sustained_growth",
+      "sucrose_node": "SUC",
+      "gene_map": null,
+      "audit_key": null,
+      "extend_sucrose": false,
+      "color": "#1F4E79"
+    },
+    {
+      "name": "flashp_suc",
+      "label": "Flash-P",
+      "kind": "python_flashp",
+      "base_network_dir": "02_networks/Tillering_Sorghum_Benchmark",
+      "network_dir": "02_networks/Tillering_Sorghum_Benchmark_suc",
+      "equations": "02_networks/Tillering_Sorghum_Benchmark_suc/network/algebraic_equations.json",
+      "sweep_network_dir": "02_networks/Tillering_Sorghum_Benchmark",
+      "response_csv": "01_audit/flashp_sucrose_response.csv",
+      "pattern_column": "B_flashp",
+      "solver_out_stem": "01_audit/solver_comparison",
+      "phenotype": "Tiller_Number",
+      "sucrose_node": "Sucrose",
+      "gene_map": "benchmark",
+      "audit_key": "benchmark",
+      "extend_sucrose": true,
+      "color": "#D55E00"
+    }
+  ]
+}

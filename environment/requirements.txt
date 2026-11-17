@@ -1,0 +1,6 @@
+# Python side of the reproduction. Verified on Python 3.14.0 / Windows 11.
+# Only the figure and comparison scripts need third-party packages; the sucrose
+# sweeps and the parameter chain run on the standard library alone.
+matplotlib>=3.8
+numpy>=1.26
+pandas>=2.0

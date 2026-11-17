@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "purpose": "Arabidopsis PSoup benchmark (Dataset S18_Benchmark_Model_Original.sbgn) -> Sorghum bicolor tillering ortholog/analog crosswalk",
+    "benchmark_source": "APSIM_PSoup_Paper/Dataset S18_Benchmark_Model_Original.sbgn + Manuscript/Supplementary.docx Extended Data Table 1",
+    "species_priority": ["Sorghum bicolor", "Oryza sativa / Zea mays (grass relative)", "Arabidopsis thaliana (last-resort fallback, flagged)"],
+    "created": "2026-08-12"
+  },
+  "genes": [
+    {"benchmark_node": "BRC1_2", "target_symbol": "TB1", "target_species": "Sorghum bicolor / Oryza sativa", "confidence": "high", "note": "SbTB1/OsTB1, direct grass ortholog of Arabidopsis BRC1/BRC2 (TCP-class II), well-characterized in sorghum bud outgrowth"},
+    {"benchmark_node": "MAX2", "target_symbol": "SbMAX2 / D3", "target_species": "Sorghum bicolor / Oryza sativa", "confidence": "high", "note": "F-box LRR SL receptor complex component; sorghum-direct evidence exists (Kebrom 2010, phyB-SbMAX2 pathway)"},
+    {"benchmark_node": "D14", "target_symbol": "SbD14 / D14", "target_species": "Sorghum bicolor / Oryza sativa", "confidence": "high", "note": "alpha/beta-hydrolase SL receptor; sorghum locus named in Extended Data Table 1, primary functional evidence from rice"},
+    {"benchmark_node": "MAX3", "target_symbol": "D17 (CCD7)", "target_species": "Oryza sativa", "confidence": "medium-high", "note": "carotenoid cleavage dioxygenase 7, SL biosynthesis; rice ortholog well characterized, sorghum ortholog exists but less literature"},
+    {"benchmark_node": "MAX4", "target_symbol": "D10 (CCD8)", "target_species": "Oryza sativa", "confidence": "medium-high", "note": "carotenoid cleavage dioxygenase 8, SL biosynthesis; rice ortholog well characterized"},
+    {"benchmark_node": "MAX1", "target_symbol": "SbMAX1a/b/c/d", "target_species": "Sorghum bicolor", "confidence": "high", "note": "4 CYP711A paralogs in sorghum genome catalyzing distinct SL biosynthesis steps (Yoda et al. 2021, New Phytologist, 10.1111/nph.17737) - sorghum-direct"},
+    {"benchmark_node": "D27", "target_symbol": "D27", "target_species": "Oryza sativa / Sorghum bicolor", "confidence": "high", "note": "iron-binding beta-carotene isomerase, first committed SL biosynthesis step; already grounded in existing Tillering_Sorghum network"},
+    {"benchmark_node": "CLAMT", "target_symbol": "Os4OCLAMT", "target_species": "Oryza sativa", "confidence": "medium", "note": "Step 1.5 update: named rice methyltransferase acting on the noncanonical 4-oxo-CLA branch (vs Arabidopsis CLAMT acting on CLA directly), catalyzing formation of 4-oxo-MeCLA; identified via cross-species coexpression analysis alongside OsCYP706C2 (Kayoumu et al. 2024, Science Advances, 10.1126/sciadv.adq3942). Confirms the CLAMT enzyme class is real and named in rice, though on a divergent pathway branch from the canonical MAX1->CLAMT->LBO route the network models; oscyp706c2 mutants themselves show no tillering phenotype (root/mycorrhizal role instead), so no new curated_edges/perturbation entry was added on this DOI alone - documentation only."},
+    {"benchmark_node": "CXE", "target_symbol": "AtCXE20 (ectopic in Zea mays)", "target_species": "Zea mays (transgenic)/Arabidopsis thaliana (native)", "confidence": "medium", "note": "Step 1.5 update: closed via T028 (perturbation_dataset.json) - Roesler et al. 2021, Frontiers in Plant Science, 10.3389/fpls.2021.639401: ectopic AtCXE20 expression in maize increases branches/tillers and reduces SL, giving CXE a real grass-species (maize) functional test (previously Arabidopsis-only via T014). Native rice CXE gene family exists (Frontiers 2024, 10.3389/fpls.2024.1435420) but no rice ortholog has been functionally tied to SL catabolism/tillering yet."},
+    {"benchmark_node": "LBO", "target_symbol": "Sobic.003G418000", "target_species": "Sorghum bicolor", "confidence": "medium", "note": "sorghum LBO ortholog implicated in SL biosynthesis / Striga response; exact supporting DOI to be confirmed during Step 1 search"},
+    {"benchmark_node": "SMXL6_7_8", "target_symbol": "D53", "target_species": "Oryza sativa / Sorghum bicolor", "confidence": "high", "note": "SL-signalling repressor (SMAX1-LIKE); already grounded in existing Tillering_Sorghum network"},
+    {"benchmark_node": "SPL9_15", "target_symbol": "IPA1 / OsSPL14", "target_species": "Oryza sativa", "confidence": "high", "note": "SQUAMOSA-PROMOTER-BINDING-PROTEIN-LIKE; already grounded in existing Tillering_Sorghum network"},
+    {"benchmark_node": "FHY3_FAR1", "target_symbol": "unconfirmed", "target_species": "unknown", "confidence": "low", "note": "transposase-derived light-signalling TFs; family characterized in maize (drought context) but no tillering-specific grass ortholog paper found yet - candidate literature_gap or Arabidopsis-flagged fallback"},
+    {"benchmark_node": "PhyB", "target_symbol": "SbPHYB (phyB)", "target_species": "Sorghum bicolor", "confidence": "high", "note": "sorghum phyB-1 mutant directly studied for shade avoidance/tillering (Kebrom et al. 2006/2010) - sorghum-direct, already in existing network"},
+    {"benchmark_node": "PIFs", "target_symbol": "OsPIL11 / OsPIL12 / OsPIL15", "target_species": "Oryza sativa", "confidence": "high", "note": "PIF-like TFs directly shown to regulate rice tillering via OsTB1 (Zhang et al. 2022, New Phytologist); grass-direct"},
+    {"benchmark_node": "NCED3", "target_symbol": "SbNCED1", "target_species": "Sorghum bicolor", "confidence": "medium-high", "note": "sorghum NCED paralog compared against OsNCED3 in phylogenetic studies; ABA biosynthesis, downstream of BRC1/HB21-40-53 axis"},
+    {"benchmark_node": "PIN_1_3_4_7 (PAT_Bud)", "target_symbol": "Dw3 (SbABCB1/SbPGP1) / PIN1", "target_species": "Sorghum bicolor / Oryza sativa", "confidence": "medium", "note": "functional analog for bud polar auxin transport; Dw3 is an ABCB-type auxin transporter (not a PIN protein) already grounded in existing Tillering_Sorghum network with sorghum-direct DOIs"},
+    {"benchmark_node": "HB21_40_53", "target_symbol": "GT1 (GRASSY TILLERS1)", "target_species": "Oryza sativa / Hordeum vulgare", "confidence": "medium", "note": "HD-Zip TF acting downstream of BRC1/TB1; GT1 is the closest characterized grass paralog (barley HvGT1), already grounded in existing Tillering_Sorghum network - functional analog, not a strict 1:1 ortholog"}
+  ],
+  "structural_nodes_carried_over": [
+    {"benchmark_node": "SL", "sorghum_node": "Strigolactone", "type": "hormone"},
+    {"benchmark_node": "CK", "sorghum_node": "Cytokinin", "type": "hormone"},
+    {"benchmark_node": "GA", "sorghum_node": "Gibberellin", "type": "hormone"},
+    {"benchmark_node": "ABA", "sorghum_node": "ABA", "type": "hormone"},
+    {"benchmark_node": "Aux_Shoot", "sorghum_node": "Auxin_Shoot", "type": "hormone"},
+    {"benchmark_node": "Aux_Bud", "sorghum_node": "Auxin_Bud", "type": "hormone"},
+    {"benchmark_node": "SUC", "sorghum_node": "Sucrose", "type": "metabolite"},
+    {"benchmark_node": "Decap_signal", "sorghum_node": "Decapitation_Signal", "type": "environment/process"},
+    {"benchmark_node": "Low_R_FR", "sorghum_node": "Low_R_FR", "type": "environment"},
+    {"benchmark_node": "High_R_FR", "sorghum_node": "High_R_FR", "type": "environment"},
+    {"benchmark_node": "Bud_release", "sorghum_node": "Bud_Release", "type": "process"},
+    {"benchmark_node": "Perception_SL", "sorghum_node": "Perception_SL", "type": "process"},
+    {"benchmark_node": "SMXL6_7_8_Transcription", "sorghum_node": "D53_Transcription", "type": "process"},
+    {"benchmark_node": "Sustained_growth", "sorghum_node": "Tiller_Number", "type": "phenotype"}
+  ]
+}
